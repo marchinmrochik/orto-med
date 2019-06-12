@@ -1,0 +1,53 @@
+.header-top nav .nav-link, .header-top span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.header-top nav .nav-link:focus, .header-top nav  .nav-link:hover, .header-top nav .nav-link.active {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+.header-bottom {
+    position: relative;
+}
+
+.header-bottom .nav-link.active, .header-bottom .nav-link:focus, .header-bottom .nav-link:hover {
+    color: var(--sushi);
+}
+
+.header-bottom .nav-link, .header-bottom .search {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#nav-tab_content {
+    position: absolute;
+    width: 100%;
+    top: 37px;
+}
+
+.block-search {
+    position: relative;
+}
+
+.search {
+    width: 367px;
+    line-height: 20px;
+    background-color: var(--concrete);
+    color: var(--mine-shaft);
+    border: none;
+    padding-left: 56px;
+}
+
+.block-search:before {
+    position: absolute;
+    display: block;
+    content: '';
+    background: url("../img/icons/icon-search.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 16px;
+}
+

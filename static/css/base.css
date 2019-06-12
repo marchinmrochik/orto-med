@@ -1,0 +1,19 @@
+.bg-alabaster {
+    background-color: var(--alabaster);
+}
+
+.text-dove-gray {
+    color: var(--dove-gray);
+}
+
+.text-silver-chalice {
+    color: var(--silver-chalice);
+}
+
+.text-sushi {
+    color: var(--sushi);
+}
+
+.text-mine-shaft {
+    color: var(--mine-shaft);
+}
