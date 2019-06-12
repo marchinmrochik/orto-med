@@ -4,15 +4,24 @@
     height: 30px;
     background-size: contain;
 }
+
 .icon-user {
     background: url("../img/icons/icon-user.svg") no-repeat center;
     width: 20px;
     height: 20px;
     background-size: contain;
 }
+
 .icon-cart {
     background: url("../img/icons/icon-cart.svg") no-repeat center;
     width: 16px;
     height: 21px;
+    background-size: contain;
+}
+
+.icon-leaf {
+    background: url("../img/icons/icon-leaf.svg") no-repeat center;
+    width: 46px;
+    height: 24px;
     background-size: contain;
 }
