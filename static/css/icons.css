@@ -25,3 +25,24 @@
     height: 24px;
     background-size: contain;
 }
+
+.icon-fs {
+    background: url("../img/icons/icon-fc.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.icon-inst {
+    background: url("../img/icons/icon-inst.svg") no-repeat center;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+}
+
+.icon-card {
+    background: url("../img/icons/icon-card.svg") no-repeat center;
+    width: 141px;
+    height: 41px;
+    background-size: contain;
+}

@@ -26,6 +26,10 @@
     color: var(--emperor);
 }
 
+.text-gray {
+    color: var(--gray);
+}
+
 .intro-img {
     background: url("../img/intro-bg.png") no-repeat center;
     width: 752px;
