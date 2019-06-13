@@ -1,0 +1,16 @@
+.section-blog {
+    padding-bottom: 100px;
+}
+
+.section-blog .block-blog {
+    width: 49.5%;
+    padding-bottom: 48px;
+}
+
+.section-blog  .blog-link {
+    font-family: "Open Sans", serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
