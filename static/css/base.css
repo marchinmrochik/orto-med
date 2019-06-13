@@ -39,6 +39,13 @@ h1 {
     line-height: 53px;
 }
 
+.section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
 .btn-outline-success {
     color: var(--sushi);
     border-color: var(--sushi);
@@ -50,4 +57,12 @@ h1 {
     color: var(--white);
     background-color: var(--sushi);
     border-color: var(--sushi);
+}
+
+.btn-success {
+    color: var(--white);
+    background-color: var(--sushi);
+    border-color: var(--sushi);
+    border-radius: 3px;
+    width: 288px;
 }
