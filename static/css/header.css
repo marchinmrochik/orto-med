@@ -1,3 +1,9 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
 .header-top nav .nav-link, .header-top span{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;

@@ -1,0 +1,38 @@
+.section-subcategories{
+    padding-bottom: 100px;
+}
+
+.section-subcategories .subcategories-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.section-subcategories .subcategories-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.section-subcategories .subcategories-link:focus, .section-subcategories .subcategories-link:hover {
+    color: var(--sushi);
+    text-decoration: none!important;
+}
+
+.section-subcategories .btn-show-subcategories {
+    position: relative;
+    margin-top: 40px;
+    padding-right: 8px;
+}
+
+.section-subcategories .btn-show-subcategories:after {
+    content: url("../img/icons/icon-arrow-sushi.svg");
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 54px;
+}
+
+.section-subcategories .btn-show-subcategories:focus::after, .section-subcategories .btn-show-subcategories:hover::after {
+    content: url("../img/icons/icon-arrow-white.svg");
+}

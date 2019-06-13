@@ -2,6 +2,10 @@
     background-color: var(--alabaster);
 }
 
+.bg-white {
+    background-color: var(--white);
+}
+
 .text-dove-gray {
     color: var(--dove-gray);
 }
@@ -18,6 +22,10 @@
     color: var(--mine-shaft);
 }
 
+.text-emperor {
+    color: var(--emperor);
+}
+
 .intro-img {
     background: url("../img/intro-bg.png") no-repeat center;
     width: 752px;
@@ -29,4 +37,17 @@ h1 {
     font-weight: bold;
     font-size: 40px;
     line-height: 53px;
+}
+
+.btn-outline-success {
+    color: var(--sushi);
+    border-color: var(--sushi);
+    border-radius: 3px;
+    width: 288px;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus {
+    color: var(--white);
+    background-color: var(--sushi);
+    border-color: var(--sushi);
 }
