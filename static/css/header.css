@@ -26,11 +26,27 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
-
-#nav-tab_content {
+#nav-tab_content.show_block {
     position: absolute;
     width: 100%;
-    top: 37px;
+    top: 52px;
+    background: var(--white);
+    padding: 38px 0 75px 81px;
+    left: 0;
+}
+
+#nav-tab_content .subcategories-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+#nav-tab_content .subcategories-link:focus, #nav-tab_content .subcategories-link:hover {
+    color: var(--sushi);
+    text-decoration: none!important;
+}
+
+#nav-tab_content .tab-pane.active {
+    display: flex;
 }
 
 .block-search {
