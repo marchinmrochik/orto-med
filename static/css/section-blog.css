@@ -14,3 +14,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+
+.section-blog  .blog-link:focus, .section-blog  .blog-link:hover {
+    color: var(--mine-shaft);
+}
