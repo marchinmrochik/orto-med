@@ -26,6 +26,14 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
+
+.header-bottom .icon-cart, .header-bottom .icon-user {
+    cursor: pointer;
+}
+.header-bottom .icon-cart:focus, .header-bottom .icon-cart:hover, .header-bottom .icon-user:focus, .header-bottom .icon-user:hover {
+    background-color: var(--sushi);
+}
+
 #nav-tab_content.show_block {
     position: absolute;
     width: 100%;

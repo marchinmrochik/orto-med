@@ -6,14 +6,22 @@
 }
 
 .icon-user {
-    background: url("../img/icons/icon-user.svg") no-repeat center;
+    background-color: var(--black);
+    -webkit-mask-image: url("../img/icons/icon-user.svg");
+    mask-image: url("../img/icons/icon-user.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     width: 20px;
-    height: 20px;
+    height: 19px;
     background-size: contain;
 }
 
 .icon-cart {
-    background: url("../img/icons/icon-cart.svg") no-repeat center;
+    background-color: var(--black);
+    -webkit-mask-image: url("../img/icons/icon-cart.svg");
+    mask-image: url("../img/icons/icon-cart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     width: 16px;
     height: 21px;
     background-size: contain;
