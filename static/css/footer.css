@@ -41,15 +41,7 @@ footer .block-contact_us .contact_us-text-info {
     word-wrap: break-word;
 }
 
-footer .block-contact_us .input::placeholder {
-    color: var(--iron);
-}
-
 footer .block-contact_us .input {
-    background: #FFFFFF;
-    border-radius: 3px;
-    border: none;
     width: 100%;
-    color: var(--mine-shaft);
     margin-bottom: 20px;
 }

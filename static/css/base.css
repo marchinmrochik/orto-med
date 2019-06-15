@@ -55,6 +55,7 @@ h1 {
     border-color: var(--sushi);
     border-radius: 3px;
     width: 288px;
+    text-transform: uppercase;
 }
 
 .btn-outline-success:hover, .btn-outline-success:focus {
@@ -69,4 +70,16 @@ h1 {
     border-color: var(--sushi);
     border-radius: 3px;
     width: 288px;
+    text-transform: uppercase;
+}
+
+.input::placeholder {
+    color: var(--iron);
+}
+
+.input {
+    background: var(--white);
+    border-radius: 3px;
+    border: none;
+    color: var(--mine-shaft);
 }

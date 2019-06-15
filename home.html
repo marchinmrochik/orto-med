@@ -60,7 +60,7 @@
                     <input type="search" class="search py-3" placeholder="Search">
                 </div>
                 <div class="d-flex align-items-center ml-5">
-                    <div class="icon-user mr-3"></div>
+                    <div class="icon-user mr-3" data-toggle="modal" data-target="#loginModal"></div>
                     <div class="icon-cart ml-3"></div>
                 </div>
             </div>
@@ -217,7 +217,7 @@
                 <a href="" class="subcategories-link text-emperor mb-2">Іонізатори, зволожувачі, очищувачі повітря</a>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-success btn-show-subcategories text-center">Більше підкатегорій</button>
+                <button type="button" class="btn btn-outline-success py-2 btn-show-subcategories text-center">Більше підкатегорій</button>
             </div>
         </div>
     </div>
@@ -269,7 +269,7 @@
                 <div class="bg-alabaster position-absolute article-bg"></div>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-success text-center">Дивитись більше</button>
+                <button type="button" class="btn btn-success py-2 text-center">Дивитись більше</button>
             </div>
         </div>
     </div>
@@ -293,7 +293,7 @@
                             систем організму і опорно-рухового апарату, а також розвиток компенсаторних
                             пристосувань до умов повсякденного життя і праці.
                         </p>
-                        <button type="button" class="btn btn-outline-success text-center mt-5 mx-auto">Дивитись</button>
+                        <button type="button" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</button>
                     </div>
                     <div class="bg-alabaster position-absolute categories-bg"></div>
                 </div>
@@ -307,7 +307,7 @@
                             Ця дисципліна вивчає функції, структуру, захворювання, методи лікування та профілактики
                             опорно-рухового апарату людини.
                         </p>
-                        <button type="button" class="btn btn-outline-success text-center mt-5 mx-auto">Дивитись</button>
+                        <button type="button" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</button>
                     </div>
                     <div class="bg-alabaster position-absolute categories-bg"></div>
                 </div>
@@ -323,7 +323,7 @@
                             яка використовується в клінічних, лікарняних умовах, а також домашня ,
                             якою може користуватися будь-яка людина.
                         </p>
-                        <button type="button" class="btn btn-outline-success text-center mt-5 mx-auto">Дивитись</button>
+                        <button type="button" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</button>
                     </div>
                     <div class="bg-alabaster position-absolute categories-bg"></div>
                 </div>
@@ -336,7 +336,7 @@
                             Кожна людина повинна дбати про своє здоров’я в першу чергу сама. Краще запобігти захворюванню,
                             ніж лікуватися. Першим важливим елементом піклування про здоров’я є відсліджування власного самопочуття.
                         </p>
-                        <button type="button" class="btn btn-outline-success text-center mt-5 mx-auto">Дивитись</button>
+                        <button type="button" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</button>
                     </div>
                     <div class="bg-alabaster position-absolute categories-bg"></div>
                 </div>
@@ -369,7 +369,7 @@
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-success text-center">Дивитись більше</button>
+                <button type="button" class="btn btn-success py-2 text-center">Дивитись більше</button>
             </div>
         </div>
     </div>
@@ -408,7 +408,7 @@
                     <p class="contact_us-text-info text-gray pr-3 mb-4">Підписуйтесь на розсилку і отримуйте актуальні пропозиції на почту</p>
                     <form action="">
                         <input type="email" placeholder="Email" class="input pl-3 py-2">
-                        <button type="submit" class="btn btn-success">Підписатись</button>
+                        <button type="submit" class="btn btn-success py-2">Підписатись</button>
                     </form>
 
                 </div>
@@ -423,7 +423,81 @@
     </div>
 </footer>
 
+
+<!--modal login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Увійти в особистий кабінет</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 py-2 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 py-2 mb-4" required>
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Увійти</button>
+                </form>
+                <p class="text-mine-shaft mx-auto main-text">Увійти за допомогою</p>
+                <div class="block-login-service mt-3 mb-4">
+                    <img src="static/img/img-service.png" width="328"  alt="">
+                </div>
+                <button type="button" data-toggle="modal" data-target="#registrationModal"
+                        data-dismiss="modal" class="btn btn-outline-success py-2 w-100">Зареєструватися</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal registration-->
+<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Реєстрація</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 py-2 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 py-2 mb-4" required >
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Зареєструватися</button>
+                </form>
+                <p class="text-mine-shaft main-text w-100 mb-0">
+                    <span class="text-dove-gray d-block mb-1">Натискаючи на цю кнопку, ви погоджуєтеся з умовами</span>
+                    Користувальницької угоди</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal forgotPassword-->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-2">Забули пароль?</h5>
+                <p class="info-text text-mine-shaft">Напишіть свій Email і ми надішлемо вам листа для відновлення пароля</p>
+                <form action="" class="w-100 mt-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 py-2 mb-4" required>
+                    <button type="submit" class="btn btn-success py-2 w-100">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="static/js/navbar.js"></script>
 <script src="static/js/show-subcategories.js"></script>
+<script src="static/js/input.js"></script>
 </body>
 </html>
