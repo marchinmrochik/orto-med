@@ -32,7 +32,7 @@
 .section-subcategories .btn-show-subcategories {
     position: relative;
     margin-top: 40px;
-    padding-right: 8px;
+    padding-right: 30px;
 }
 
 .section-subcategories .btn-show-subcategories:after {
@@ -44,8 +44,8 @@
     background-color: var(--sushi);
     -webkit-mask-image: url("../img/icons/icon-arrow.svg");
     mask-image: url("../img/icons/icon-arrow.svg");
-    top: 15px;
-    right: 54px;
+    top: 16.5px;
+    right: 45px;
 }
 
 .section-subcategories .btn-show-subcategories:focus::after, .section-subcategories .btn-show-subcategories:hover::after {
