@@ -64,3 +64,22 @@
     width: 16px;
     height: 11px;
 }
+
+.icon-arrow {
+    background-color: var(--mine-shaft);
+    -webkit-mask-image: url("../img/icons/icon-arrow.svg");
+    mask-image: url("../img/icons/icon-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 7px;
+    background-size: contain;
+}
+
+.icon-arrow.left {
+    transform: rotate(90deg);
+}
+
+.icon-arrow.right {
+    transform: rotate(-90deg);
+}

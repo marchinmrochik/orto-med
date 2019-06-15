@@ -1,0 +1,35 @@
+.pagination {
+    border-radius: 3px;
+}
+
+.pagination .page-item .page-link {
+    background: transparent;
+    border: none;
+    font-family: "Open Sans", sans-serif ;
+    font-weight: normal;
+    font-size: 14px;
+    min-height: 35px;
+    text-align: center;
+    padding: 9px 13.5px;
+}
+
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:focus {
+    box-shadow: none!important;
+    color: var(--white);
+    background: var(--sushi);
+}
+
+.pagination .page-item:focus {
+    outline: none;
+}
+
+
+.pagination .page-item .page-link .icon-arrow {
+    margin-top: 6px;
+}
+
+.pagination .page-item .page-link:hover .icon-arrow,
+.pagination .page-item .page-link:focus .icon-arrow {
+    background-color: var(--white);
+}

@@ -7,6 +7,15 @@
     padding-bottom: 48px;
 }
 
+.section-blog .block-blog3 {
+    width: 32.7%;
+    padding-bottom: 48px;
+}
+
+.section-blog .category-blog {
+    min-height: 50px;
+}
+
 .section-blog  .blog-link {
     font-family: "Open Sans", serif;
     font-weight: normal;
