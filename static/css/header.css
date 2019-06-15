@@ -4,9 +4,14 @@ header {
     z-index: 5;
 }
 
-.header-top nav .nav-link, .header-top span{
+.header-top nav .nav-link, .header-top span, .header-top .number-phone{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+}
+
+.header-top .number-phone:focus, .header-top .number-phone:hover {
+    text-decoration: none!important;
+    color: var(--sushi);
 }
 
 .header-top nav .nav-link:focus, .header-top nav  .nav-link:hover, .header-top nav .nav-link.active {

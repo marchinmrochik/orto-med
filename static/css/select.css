@@ -1,0 +1,73 @@
+.select-phone .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 190px;
+}
+
+.select-phone .bootstrap-select .dropdown-toggle .filter-option-inner-inner .d-none {
+    display: inline-block!important;
+    margin-right: 8px;
+}
+
+.select-phone .bootstrap-select .dropdown-toggle .filter-option-inner-inner .number-phone {
+    color: var(--sushi);
+}
+
+.select-phone .dropdown-toggle::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 7px;
+    background-color: var(--mine-shaft);
+    -webkit-mask-image: url("../img/icons/icon-arrow.svg");
+    mask-image: url("../img/icons/icon-arrow.svg");
+    margin-top: 3px;
+}
+
+.select-phone .dropdown.show .dropdown-toggle::after{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+
+.select-phone .bootstrap-select>.dropdown-toggle:focus, .select-phone .bootstrap-select>.dropdown-toggle:hover,
+.select-phone .bootstrap-select>.dropdown-toggle:active {
+    background: transparent!important;
+    border: 1px solid var(--sushi);
+    border-radius: 0px;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.select-phone .dropdown.bootstrap-select.show .dropdown-toggle {
+    background: transparent!important;
+    border: 1px solid var(--sushi);
+    border-radius: 0px;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.select-phone .dropdown-menu {
+    margin-top: 0;
+    border-radius: 0px;
+    background: var(--alabaster);
+    border: 1px solid var(--sushi);
+    border-top: none;
+    padding: 4px 0 4px;
+}
+
+.select-phone .bootstrap-select .dropdown-menu li a {
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+    line-height: normal;
+}
+
+.select-phone .bootstrap-select .dropdown-menu li a.active {
+    background: transparent!important;
+}
+
+.select-phone .bootstrap-select .dropdown-menu li:focus, .select-phone .bootstrap-select .dropdown-menu li a:hover,
+.select-phone .bootstrap-select .dropdown-menu li a:focus, .select-phone .bootstrap-select .dropdown-menu li a:active{
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
