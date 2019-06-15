@@ -20,6 +20,7 @@
     -webkit-mask-image: url("../img/icons/icon-arrow.svg");
     mask-image: url("../img/icons/icon-arrow.svg");
     margin-top: 3px;
+    transition: transform 0.5s;
 }
 
 .select-phone .dropdown.show .dropdown-toggle::after{
