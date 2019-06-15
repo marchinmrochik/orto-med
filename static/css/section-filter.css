@@ -1,0 +1,18 @@
+.section-filter .filter-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-filter .link-filter {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.section-filter .link-filter.active, .section-filter .link-filter:focus, .section-filter .link-filter:hover {
+    color: var(--mine-shaft);
+    text-decoration: underline;
+}

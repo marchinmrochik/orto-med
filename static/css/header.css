@@ -2,6 +2,8 @@ header {
     width: 100%;
     position: fixed;
     z-index: 5;
+    border-bottom: 1px solid var(--alabaster);
+    top: 0;
 }
 
 .header-top nav .nav-link, .header-top span, .header-top .number-phone{

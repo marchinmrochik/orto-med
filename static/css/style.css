@@ -14,3 +14,7 @@
 @import "section-article.css";
 @import "section-categories.css";
 @import "section-blog.css";
+@import "section-navigate.css";
+@import "section-filter.css";
+
+@import "article-page.css";

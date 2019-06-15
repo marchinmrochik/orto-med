@@ -1,0 +1,18 @@
+.section-navigate {
+    margin-top: 107px;
+    margin-bottom: 24px;
+}
+
+.section-navigate .text-navigation {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.section-navigate .link-navigate {
+    text-decoration: none!important;
+}
+
+.section-navigate  .link-navigate:focus, .section-navigate .link-navigate:hover {
+    color: var(--black);
+}
