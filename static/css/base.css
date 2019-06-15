@@ -84,4 +84,11 @@ h1 {
     border-radius: 3px;
     border: none;
     color: var(--mine-shaft);
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+button:focus , input:focus {
+    outline: none!important;
+    box-shadow: none!important;
 }
