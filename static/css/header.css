@@ -2,7 +2,6 @@ header {
     width: 100%;
     position: fixed;
     z-index: 5;
-    border-bottom: 1px solid var(--alabaster);
     top: 0;
 }
 
@@ -23,6 +22,7 @@ header {
 
 .header-bottom {
     position: relative;
+    border-bottom: 1px solid var(--alabaster);
 }
 
 .header-bottom .nav-link.active, .header-bottom .nav-link:focus, .header-bottom .nav-link:hover {
@@ -51,7 +51,6 @@ header {
     background: var(--white);
     padding: 38px 0 75px 81px;
     border-bottom: 1px solid var(--sushi);
-    margin-top: 1px;
 }
 
 #nav-tab_content .subcategories-link {
@@ -92,3 +91,8 @@ header {
     left: 16px;
 }
 
+@media (max-width: 1440px) {
+    .search {
+        width: 250px;
+    }
+}
