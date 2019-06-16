@@ -41,13 +41,17 @@ header {
     background-color: var(--sushi);
 }
 
+#nav-tab_content {
+    display: none!important;
+}
+
 #nav-tab_content.show_block {
-    position: absolute;
+    display: block!important;
     width: 100%;
-    top: 52px;
     background: var(--white);
     padding: 38px 0 75px 81px;
-    left: 0;
+    border-bottom: 1px solid var(--sushi);
+    margin-top: 1px;
 }
 
 #nav-tab_content .subcategories-link {
