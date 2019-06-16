@@ -16,14 +16,17 @@
     min-height: 50px;
 }
 
-.section-blog  .blog-link {
+.section-blog .blog-link {
     font-family: "Open Sans", serif;
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    border-bottom: 1px var(--mine-shaft) solid;
+    padding-bottom: 1px;
 }
 
-.section-blog  .blog-link:focus, .section-blog  .blog-link:hover {
+.section-blog .blog-link:focus, .section-blog  .blog-link:hover {
     color: var(--mine-shaft);
+    text-decoration: none;
 }

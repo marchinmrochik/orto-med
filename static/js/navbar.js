@@ -7,6 +7,6 @@ $(document).mouseup(function (e){ // событие клика по веб-до�
     if (!div.is(e.target) // если клик был не по нашему блоку
         && div.has(e.target).length === 0) { // и не по его дочерним элементам
         $('#nav-tab_content').removeClass('show_block'); // скрываем его
-        $('.nav-item[data-toggle="tab"]').hasClass('active').removeClass('show_block').setAttribute('aria-checked', 'false');
+        $('.nav-item[data-toggle="tab"].active').removeClass('active').attr('aria-selected' , false);
     }
 });
