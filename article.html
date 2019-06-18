@@ -23,8 +23,8 @@
 </head>
 <body>
 
-<header>
-    <div class="container-fluid header-top bg-alabaster px-5">
+<header id="header">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3 header-top bg-alabaster">
         <div class="row d-flex justify-content-between">
             <nav class="d-flex">
                 <a class="nav-link text-dove-gray pr-5" href="#">Доставка та оплата</a>
@@ -32,20 +32,23 @@
                 <a class="nav-link text-dove-gray pl-5" href="#">Наші магазини</a>
             </nav>
             <div class="d-flex align-items-center">
-               <div class="mr-5 select-phone">
-                   <select class="selectpicker" id="select-phone">
-                       <option data-content="<span class='d-none'>Телефон:</span>
-                       <a href='tel:067 460 46 26' class='text-mine-shaft number-phone'>067 460 46 26</a>">
-                       </option>
-                       <option data-content="<span class='d-none'>Телефон:</span>
-                       <a href='tel:095 444 03 57' class='text-mine-shaft number-phone'>095 444 03 57</a>">
-                       </option>
-                       <option data-content="<span class='d-none'>Телефон:</span>
-                       <a href='tel:093 505 79 21' class='text-mine-shaft number-phone'>093 505 79 21</a>">
-                       </option>
-                   </select>
+                <div class="mr-5 select-phone">
+                    <select class="selectpicker" id="select-phone">
+                        <option value="tel:+380674604626"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>067 460 46 26</a>">
+                        </option>
+                        <option value="tel:+380954440357"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>095 444 03 57</a>">
+                        </option>
+                        <option value="tel:+380935057921"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>093 505 79 21</a>">
+                        </option>
+                    </select>
 
-               </div>
+                </div>
                 <nav class="d-flex">
                     <a class="nav-link text-dove-gray active pl-0 pr-2" href="#">Укр</a>
                     <a class="nav-link text-dove-gray pl-3" href="#">Рус</a>
@@ -53,107 +56,106 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid header-bottom px-5 bg-white">
-        <div class="row">
-            <div class="col-7 d-flex align-items-center">
+    <div class="container-fluid header-bottom px-5 px-xl-5 px-lg-3 bg-white">
+        <div class="row justify-content-between">
+            <div class="col-lg-8 d-flex align-items-center">
                 <a href="home.html" class="icon-logo"></a>
-                <div class="nav pl-5" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link text-mine-shaft pr-4" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-home" aria-selected="false">Реабілітація</a>
-                    <a class="nav-item nav-link text-mine-shaft pr-4" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-profile" aria-selected="false">Ортопедія</a>
-                    <a class="nav-item nav-link text-mine-shaft pr-4" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-contact" aria-selected="false">Медтехніка</a>
-                    <a class="nav-item nav-link text-mine-shaft pr-4" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-contact" aria-selected="false">Ваше здоров’я</a>
-                    <a class="nav-item nav-link text-mine-shaft pr-4" href="">Блог</a>
+                <div class="nav pl-5 pl-lg-4" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-home" aria-selected="false">Реабілітація</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-profile" aria-selected="false">Ортопедія</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-contact" aria-selected="false">Медтехніка</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-contact" aria-selected="false">Ваше здоров’я</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-4 pr-lg-0" href="">Блог</a>
                 </div>
             </div>
-            <div class="col-5 d-flex align-items-center justify-content-end">
+            <div class="col-lg-4 d-flex align-items-center justify-content-end">
                 <div class="block-search">
                     <input type="search" class="search py-3" placeholder="Search">
                 </div>
-                <div class="d-flex align-items-center ml-5">
-                    <div class="icon-user mr-3" data-toggle="modal" data-target="#loginModal"></div>
+                <div class="d-flex align-items-center ml-5 ml-lg-4">
+                    <div class="icon-user mr-3 mr-lg-2" data-toggle="modal" data-target="#loginModal"></div>
                     <div class="icon-cart ml-3"></div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="tab-content" id="nav-tab_content">
+        <div class="tab-pane fade" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Інвалідні візки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Підйомники та пандуси</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Ходунки та роллери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Палиці</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Милиці</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та аксесуари</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та подушки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та крісла-каталки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і туалету</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
+            </div>
+        </div>
 
-        <div class="tab-content" id="nav-tab_content">
-            <div class="tab-pane fade" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Інвалідні візки</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Підйомники та пандуси</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Ходунки та роллери</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Палиці</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Милиці</a>
-                </div>
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та аксесуари</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та подушки</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та крісла-каталки</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і туалету</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
-                </div>
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
-                </div>
+        <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Корсети та бандажі</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Коректори постави (Реклінатори, рами)</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Пристосування для руки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Пристосування для ноги</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Тутори</a>
             </div>
-
-            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Корсети та бандажі</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Коректори постави (Реклінатори, рами)</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Пристосування для руки</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Пристосування для ноги</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Тутори</a>
-                </div>
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Гомілкоступи</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Головотримачі</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Ортопедичні товари для дітей</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Устілки ортопедичні (супінатори)</a>
-                </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Гомілкоступи</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Головотримачі</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Ортопедичні товари для дітей</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Устілки ортопедичні (супінатори)</a>
             </div>
-            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Вітафон</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Термометри і гігромертри</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Аспіратори</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Кисневі концентратори</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Негатоскопи</a>
-                </div>
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Кварцові лампи</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Алкотестери</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Інгалятори (небулайзери)</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Глюкометри</a>
-                </div>
+        </div>
+        <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Вітафон</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Термометри і гігромертри</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Аспіратори</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Кисневі концентратори</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Негатоскопи</a>
             </div>
-            <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Компресійний та антиемболічний трикотаж</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Для діагностики і ліування</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Медичний одяг</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Ваги</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Акушерство, педіатрія, гінекологія</a>
-                </div>
-                <div class="d-flex flex-column mr-5 pr-4">
-                    <a href="" class="subcategories-link text-emperor mb-2">Аплікатори Ляпко</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Масажери</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Гідромасажні ванночки</a>
-                    <a href="" class="subcategories-link text-emperor mb-2">Іонізатори, зволожувачі, очищувачі повітря</a>
-                </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Кварцові лампи</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Алкотестери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Інгалятори (небулайзери)</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Глюкометри</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Компресійний та антиемболічний трикотаж</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Для діагностики і ліування</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Медичний одяг</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Ваги</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Акушерство, педіатрія, гінекологія</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Аплікатори Ляпко</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Масажери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Гідромасажні ванночки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Іонізатори, зволожувачі, очищувачі повітря</a>
             </div>
         </div>
     </div>
 </header>
 <section class="section-navigate">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
         <div class="row">
             <div class="col-12">
                 <p class="text-navigation">
-                    <a href="index.html" class="text-mine-shaft link-navigate">Головна</a> / <span class="text-silver-chalice">Статті</span>
+                    <a href="index.html" class="text-mine-shaft link-navigate">Головна</a> / <a href="#" class="text-silver-chalice link-navigate">Статті</a>
                 </p>
             </div>
         </div>
@@ -161,7 +163,7 @@
 </section>
 <h3 class="name-page mb-4">Статті</h3>
 <section class="section-filter">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
         <div class="row bg-alabaster py-5">
             <p class="text-mine-shaft filter-title w-100 text-center mb-2">Фільтри</p>
             <div class="col-9 mx-auto">
@@ -180,10 +182,10 @@
     </div>
 </section>
 <section class="section-article pt-5">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
         <div class="row">
-            <div class="col-12 position-relative block-article d-flex mb-5">
-                <img src="static/img/article-img1.png" style="max-width: 632px;object-fit: contain" alt="">
+            <div class="col-12 position-relative block-article d-flex mb-5 px-0">
+                <img src="static/img/article-img1.png" style="max-width: 50%;object-fit: contain;object-position: top" alt="">
                 <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
                     <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
                     <div class="align-items-center d-flex mt-4">
@@ -201,7 +203,7 @@
                 </div>
                 <div class="bg-alabaster position-absolute article-bg"></div>
             </div>
-            <div class="col-12 position-relative block-article reverse d-flex mb-5">
+            <div class="col-12 position-relative block-article reverse d-flex mb-5 px-0">
                 <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
                     <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
                     <div class="align-items-center d-flex mt-4">
@@ -217,49 +219,11 @@
                     </p>
                     <a href="" class="text-dove-gray article-link mt-4"><u>Читати повністю</u></a>
                 </div>
-                <img src="static/img/article-img2.png" style="max-width: 632px;object-fit: contain" alt="">
+                <img src="static/img/article-img2.png" style="max-width: 50%;object-fit: contain;object-position: top" alt="">
                 <div class="bg-alabaster position-absolute article-bg"></div>
             </div>
-            <div class="col-12 position-relative block-article d-flex mb-5">
-                <img src="static/img/article-img1.png" style="max-width: 632px;object-fit: contain" alt="">
-                <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
-                    <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
-                    <div class="align-items-center d-flex mt-4">
-                        <span class="article-tag text-silver-chalice">Використовуй правильно</span>
-                        <span class="text-silver-chalice line">|</span>
-                        <span class="article-data text-silver-chalice">11 квітня 2019</span>
-                    </div>
-                    <p class="text-dove-gray article-text mb-0 mt-4">
-                        Поверніть радість життя! За статистикою Всесвітньої організації
-                        охорони здоров’я кожні 5 сек. на земній кулі
-                        одна людина стає інвалідом. В Україні зареєстровано
-                        2 600 000 інвалідів, тобто кожен ...
-                    </p>
-                    <a href="" class="text-dove-gray article-link mt-4"><u>Читати повністю</u></a>
-                </div>
-                <div class="bg-alabaster position-absolute article-bg"></div>
-            </div>
-            <div class="col-12 position-relative block-article reverse d-flex mb-5">
-                <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
-                    <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
-                    <div class="align-items-center d-flex mt-4">
-                        <span class="article-tag text-silver-chalice">Використовуй правильно</span>
-                        <span class="text-silver-chalice line">|</span>
-                        <span class="article-data text-silver-chalice">11 квітня 2019</span>
-                    </div>
-                    <p class="text-dove-gray article-text mb-0 mt-4">
-                        Поверніть радість життя! За статистикою Всесвітньої організації
-                        охорони здоров’я кожні 5 сек. на земній кулі
-                        одна людина стає інвалідом. В Україні зареєстровано
-                        2 600 000 інвалідів, тобто кожен ...
-                    </p>
-                    <a href="" class="text-dove-gray article-link mt-4"><u>Читати повністю</u></a>
-                </div>
-                <img src="static/img/article-img2.png" style="max-width: 632px;object-fit: contain" alt="">
-                <div class="bg-alabaster position-absolute article-bg"></div>
-            </div>
-            <div class="col-12 position-relative block-article d-flex mb-5">
-                <img src="static/img/article-img1.png" style="max-width: 632px;object-fit: contain" alt="">
+            <div class="col-12 position-relative block-article d-flex mb-5 px-0">
+                <img src="static/img/article-img1.png" style="max-width: 50%;object-fit: contain;object-position: top" alt="">
                 <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
                     <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
                     <div class="align-items-center d-flex mt-4">
@@ -277,7 +241,7 @@
                 </div>
                 <div class="bg-alabaster position-absolute article-bg"></div>
             </div>
-            <div class="col-12 position-relative block-article reverse d-flex mb-5">
+            <div class="col-12 position-relative block-article reverse d-flex mb-5 px-0">
                 <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
                     <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
                     <div class="align-items-center d-flex mt-4">
@@ -293,7 +257,45 @@
                     </p>
                     <a href="" class="text-dove-gray article-link mt-4"><u>Читати повністю</u></a>
                 </div>
-                <img src="static/img/article-img2.png" style="max-width: 632px;object-fit: contain" alt="">
+                <img src="static/img/article-img2.png" style="max-width: 50%;object-fit: contain;object-position: top" alt="">
+                <div class="bg-alabaster position-absolute article-bg"></div>
+            </div>
+            <div class="col-12 position-relative block-article d-flex mb-5 px-0">
+                <img src="static/img/article-img1.png" style="max-width: 50%;object-fit: contain;object-position: top" alt="">
+                <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
+                    <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
+                    <div class="align-items-center d-flex mt-4">
+                        <span class="article-tag text-silver-chalice">Використовуй правильно</span>
+                        <span class="text-silver-chalice line">|</span>
+                        <span class="article-data text-silver-chalice">11 квітня 2019</span>
+                    </div>
+                    <p class="text-dove-gray article-text mb-0 mt-4">
+                        Поверніть радість життя! За статистикою Всесвітньої організації
+                        охорони здоров’я кожні 5 сек. на земній кулі
+                        одна людина стає інвалідом. В Україні зареєстровано
+                        2 600 000 інвалідів, тобто кожен ...
+                    </p>
+                    <a href="" class="text-dove-gray article-link mt-4"><u>Читати повністю</u></a>
+                </div>
+                <div class="bg-alabaster position-absolute article-bg"></div>
+            </div>
+            <div class="col-12 position-relative block-article reverse d-flex mb-5 px-0">
+                <div class="article-info align-items-center d-flex flex-column justify-content-end mx-auto">
+                    <h4 class="article-title text-mine-shaft">Поверніть радість життя</h4>
+                    <div class="align-items-center d-flex mt-4">
+                        <span class="article-tag text-silver-chalice">Використовуй правильно</span>
+                        <span class="text-silver-chalice line">|</span>
+                        <span class="article-data text-silver-chalice">11 квітня 2019</span>
+                    </div>
+                    <p class="text-dove-gray article-text mb-0 mt-4">
+                        Поверніть радість життя! За статистикою Всесвітньої організації
+                        охорони здоров’я кожні 5 сек. на земній кулі
+                        одна людина стає інвалідом. В Україні зареєстровано
+                        2 600 000 інвалідів, тобто кожен ...
+                    </p>
+                    <a href="" class="text-dove-gray article-link mt-4"><u>Читати повністю</u></a>
+                </div>
+                <img src="static/img/article-img2.png" style="max-width: 50%;object-fit: contain;object-position: top" alt="">
                 <div class="bg-alabaster position-absolute article-bg"></div>
             </div>
         </div>
@@ -301,9 +303,9 @@
 </section>
 
 <footer class="bg-alabaster pt-5 pb-3">
-    <div class="container-fluid px-5">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
         <div class="row d-flex justify-content-between">
-            <div class="col-2">
+            <div class="col-lg-2">
                 <a href="home.html" class="icon-logo mb-5"></a>
                 <p class="social-label text-silver-chalice">Соціальні мережі</p>
                 <div class="d-flex">
@@ -311,7 +313,7 @@
                     <a href="" class="icon-inst"></a>
                 </div>
             </div>
-            <div class="col-4 d-flex justify-content-between">
+            <div class="col-xl-4 col-lg-5 d-flex justify-content-between">
                 <div class="d-flex flex-column">
                     <a href="" class="text-mine-shaft link-footer mb-2">Контакти</a>
                     <a href="" class="text-mine-shaft link-footer mb-2">Оплата і доставка</a>
@@ -327,8 +329,8 @@
                     <a href="" class="text-mine-shaft link-footer">Питання та відповіді</a>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="block-contact_us">
+            <div class="col-lg-4">
+                <div class="block-contact_us ml-auto">
                     <h5 class="contact_us-title text-mine-shaft">Дізнавайтесь першим</h5>
                     <p class="contact_us-text-info text-gray pr-3 mb-4">Підписуйтесь на розсилку і отримуйте актуальні пропозиції на почту</p>
                     <form action="">
