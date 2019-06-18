@@ -1,0 +1,43 @@
+.wrapper{
+    width:100%;
+}
+.panel-heading {
+    padding: 0;
+    border:0;
+}
+.panel-title>a, .panel-title>a:active{
+    display:block;
+    padding:16px 24px;
+    color:var(--mine-shaft);
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    border-bottom: 1px solid var(--gallery);
+}
+.panel-heading  a:before {
+    content: "";
+    background: url("../img/icons/icon-arrow.svg") no-repeat center;
+    width: 10px;
+    height: 7px;
+    float: right;
+    transition: all 0.5s;
+}
+.panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.panel-default .link-subcategories {
+    display:block;
+    padding:16px 24px;
+    color:var(--mine-shaft);
+    font-size:14px;
+    font-weight:normal;
+    border-bottom: 1px solid var(--gallery);
+}
+.panel-default .link-subcategories:hover, .panel-default .link-subcategories:focus {
+    background: var(--alabaster);
+    color: var(--sushi);
+    text-decoration:none;
+}

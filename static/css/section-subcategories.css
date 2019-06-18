@@ -56,3 +56,26 @@
 .section-subcategories .btn-show-subcategories:focus::after, .section-subcategories .btn-show-subcategories:hover::after {
     background-color: var(--white);
 }
+
+.block-subcategories {
+    width: 49.4%;
+    border: 1px solid var(--alabaster);
+}
+
+.block-subcategories .title-subcategories {
+    width: 100%;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+.block-subcategories .title-subcategories span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .block-subcategories {
+        width: 100%;
+    }
+}
