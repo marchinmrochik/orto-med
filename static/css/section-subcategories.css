@@ -19,6 +19,11 @@
     line-height: 25px;
 }
 
+.section-subcategories .subcategories-title:hover, .section-subcategories .subcategories-title:focus {
+    color: var(--black);
+    text-decoration: none!important;
+}
+
 .section-subcategories .subcategories-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
