@@ -65,6 +65,13 @@
     height: 11px;
 }
 
+.icon-close {
+    background: url("../img/icons/icon-close.svg") no-repeat center;
+    width: 6px;
+    height: 7px;
+    background-size: contain;
+}
+
 .icon-arrow {
     background-color: var(--mine-shaft);
     -webkit-mask-image: url("../img/icons/icon-arrow.svg");

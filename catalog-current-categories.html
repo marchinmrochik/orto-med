@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-en_US.min.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3 header-top bg-alabaster">
+        <div class="row d-flex justify-content-between">
+            <nav class="d-flex">
+                <a class="nav-link text-dove-gray pr-5" href="#">Доставка та оплата</a>
+                <a class="nav-link text-dove-gray px-2" href="#">Повернення та обмін</a>
+                <a class="nav-link text-dove-gray pl-5" href="#">Наші магазини</a>
+            </nav>
+            <div class="d-flex align-items-center">
+               <div class="mr-5 select-phone">
+                   <select class="selectpicker" id="select-phone">
+                       <option value="tel:+380674604626"
+                               data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>067 460 46 26</a>">
+                       </option>
+                       <option value="tel:+380954440357"
+                               data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>095 444 03 57</a>">
+                       </option>
+                       <option value="tel:+380935057921"
+                               data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>093 505 79 21</a>">
+                       </option>
+                   </select>
+
+               </div>
+                <nav class="d-flex">
+                    <a class="nav-link text-dove-gray active pl-0 pr-2" href="#">Укр</a>
+                    <a class="nav-link text-dove-gray pl-3" href="#">Рус</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header-bottom px-5 px-xl-5 px-lg-3 bg-white">
+        <div class="row justify-content-between">
+            <div class="col-lg-8 d-flex align-items-center">
+                <a href="home.html" class="icon-logo"></a>
+                <div class="nav pl-5 pl-lg-4" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab" aria-controls="nav-home" aria-selected="false">Реабілітація</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-profile" aria-selected="false">Ортопедія</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-contact" aria-selected="false">Медтехніка</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab" aria-controls="nav-contact" aria-selected="false">Ваше здоров’я</a>
+                    <a class="nav-item nav-link text-mine-shaft pr-4 pr-lg-0" href="">Блог</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                <div class="block-search">
+                    <input type="search" class="search py-3" placeholder="Search">
+                </div>
+                <div class="d-flex align-items-center ml-5 ml-lg-4">
+                    <div class="icon-user mr-3 mr-lg-2" data-toggle="modal" data-target="#loginModal"></div>
+                    <div class="icon-cart ml-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="nav-tab_content">
+        <div class="tab-pane fade" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Інвалідні візки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Підйомники та пандуси</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Ходунки та роллери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Палиці</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Милиці</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та аксесуари</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та подушки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та крісла-каталки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і туалету</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Корсети та бандажі</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Коректори постави (Реклінатори, рами)</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Пристосування для руки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Пристосування для ноги</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Тутори</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Гомілкоступи</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Головотримачі</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Ортопедичні товари для дітей</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Устілки ортопедичні (супінатори)</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Вітафон</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Термометри і гігромертри</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Аспіратори</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Кисневі концентратори</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Негатоскопи</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Кварцові лампи</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Алкотестери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Інгалятори (небулайзери)</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Глюкометри</a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Компресійний та антиемболічний трикотаж</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Для діагностики і ліування</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Медичний одяг</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Ваги</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Акушерство, педіатрія, гінекологія</a>
+            </div>
+            <div class="d-flex flex-column mr-5 pr-4">
+                <a href="" class="subcategories-link text-emperor mb-2">Аплікатори Ляпко</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Масажери</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Гідромасажні ванночки</a>
+                <a href="" class="subcategories-link text-emperor mb-2">Іонізатори, зволожувачі, очищувачі повітря</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-navigate">
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-navigation">
+                    <a href="home.html" class="text-mine-shaft link-navigate">Головна</a> / <a href="#" class="text-mine-shaft link-navigate"> Категорії</a> / <a href="#" class="text-silver-chalice link-navigate"> Інвалідні візки </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid px-5 px-xl-5 px-lg-3 mb-5 pb-5">
+    <div class="row">
+        <div class="col-lg-3">
+            <form action="" class="mb-4 pb-2">
+                <p class="text-silver-chalice title-group-check mb-2 pb-1">Тип</p>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="typeCheck1" name="type-categories">
+                    <label class="custom-control-label" for="typeCheck1">Активний <span>(12)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="typeCheck2" name="type-categories">
+                    <label class="custom-control-label" for="typeCheck2">Дитячий <span>(8)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="typeCheck3" name="type-categories">
+                    <label class="custom-control-label" for="typeCheck3">З електроприводом <span>(15)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="typeCheck4" name="type-categories">
+                    <label class="custom-control-label" for="typeCheck4">Механічний <span>(22)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="typeCheck5" name="type-categories">
+                    <label class="custom-control-label" for="typeCheck5">Універсальна <span>(1)</span></label>
+                </div>
+            </form>
+            <form action="" class="mb-4 pb-2">
+                <p class="text-silver-chalice title-group-check mb-2 pb-1">Виробник</p>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="producerCheck1" name="producer-categories">
+                    <label class="custom-control-label" for="producerCheck1">Invacare <span>(12)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="producerCheck2" name="producer-categories">
+                    <label class="custom-control-label" for="producerCheck2">Kuschall <span>(8)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="producerCheck3" name="producer-categories">
+                    <label class="custom-control-label" for="producerCheck3">Orliman <span>(15)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="producerCheck4" name="producer-categories">
+                    <label class="custom-control-label" for="producerCheck4">OSD <span>(22)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="producerCheck5" name="producer-categories">
+                    <label class="custom-control-label" for="producerCheck5">Ottobock <span>(1)</span></label>
+                </div>
+            </form>
+            <form action="" class="mb-4 pb-2">
+                <p class="text-silver-chalice title-group-check mb-2 pb-1">Максимально допустиме навантаження (кг)</p>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="maxWeightCheck1" name="maxWeight-categories">
+                    <label class="custom-control-label" for="maxWeightCheck1">35 - 123,3 <span>(12)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="maxWeightCheck2" name="maxWeight-categories">
+                    <label class="custom-control-label" for="maxWeightCheck2">123,3 - 211,7 <span>(8)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="maxWeightCheck3" name="maxWeight-categories">
+                    <label class="custom-control-label" for="maxWeightCheck3">211,7 - 300 <span>(15)</span></label>
+                </div>
+            </form>
+            <form action="" class="mb-4 pb-2">
+                <p class="text-silver-chalice title-group-check mb-2 pb-1">Ширина сидіння загальна (см)</p>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="maxWidthCheck1" name="maxWidth-categories">
+                    <label class="custom-control-label" for="maxWidthCheck1">19 - 37,3 <span>(12)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="maxWidthCheck2" name="maxWidth-categories">
+                    <label class="custom-control-label" for="maxWidthCheck2">37,3 - 55,7 <span>(8)</span></label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="maxWidthCheck3" name="maxWidth-categories">
+                    <label class="custom-control-label" for="maxWidthCheck3">55,7 - 74,0 <span>(15)</span></label>
+                </div>
+            </form>
+            <form action="" class="mb-4 pb-2">
+                <p class="text-silver-chalice title-group-check mb-2 pb-1">Ціна</p>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck1" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck1">До 500 грн</label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck2" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck2">500 грн – 1 000 грн</label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck3" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck3">1 000 грн – 2 000 грн</label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck4" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck4">2 000 грн – 4 000 грн </label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck5" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck5">4 000 грн – 8 000 грн</label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck6" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck6">8 000 грн – 16 000 грн</label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck7" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck7">16 000 грн – 32 000 грн</label>
+                </div>
+                <div class="custom-control custom-checkbox price mb-2 pb-1">
+                    <input type="checkbox" class="custom-control-input" id="priceCheck8" name="price-categories">
+                    <label class="custom-control-label" for="priceCheck8">Від 32 000 грн</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-9 pl-4 section-catalog-product-preview">
+            <div class="d-flex justify-content-between mb-3">
+                <h5 class="current-categories-name text-mine-shaft">Інвалідні візки</h5>
+                <div class="block-pagination d-flex align-items-center">
+                    <span class="num-product text-silver-chalice pr-4 mr-2">97 товарів</span>
+                    <nav class="">
+                        <ul class="pagination bg-alabaster mb-0">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <div aria-hidden="true" class="icon-arrow left"></div>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link text-mine-shaft" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-mine-shaft" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-mine-shaft" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <div aria-hidden="true" class="icon-arrow right"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="block-filter-check d-flex flex-wrap align-items-center mt-2">
+                    <div class="bg-alabaster filter-check px-3 d-flex justify-content-between align-items-center">
+                        <p class="mb-0 mr-3 text-mine-shaft">Активний</p>
+                        <div class="icon-close"></div>
+                    </div>
+                    <div class="bg-alabaster filter-check px-3 d-flex justify-content-between align-items-center">
+                        <p class="mb-0 mr-3 text-mine-shaft">Invacare</p>
+                        <div class="icon-close"></div>
+                    </div>
+                    <p class="text-silver-chalice mb-0 ml-4">Очистити всі фільтри</p>
+                </div>
+                <div class="block-sort d-flex align-items-center justify-content-end mt-2">
+                    <p class="text-mine-shaft mb-0">Сортування:</p>
+                    <a class="active ml-4" href="">З більш дорогих</a>
+                    <a class="ml-4" href="">З більш дешевих</a>
+                    <a class="ml-4" href="">Акції</a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-alabaster pt-5 pb-3">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-2">
+                <a href="home.html" class="icon-logo mb-5"></a>
+                <p class="social-label text-silver-chalice">Соціальні мережі</p>
+                <div class="d-flex">
+                    <a href="" class="icon-fs mr-3"></a>
+                    <a href="" class="icon-inst"></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                    <a href="" class="text-mine-shaft link-footer mb-2">Контакти</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Оплата і доставка</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Повернення і обмін</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Кар’єра</a>
+                    <a href="" class="text-mine-shaft link-footer">Блог</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <a href="" class="text-mine-shaft link-footer mb-2">Працюйте з нами</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Про нас</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Соціальна відповідальність</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Статті</a>
+                    <a href="" class="text-mine-shaft link-footer">Питання та відповіді</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="block-contact_us ml-auto">
+                    <h5 class="contact_us-title text-mine-shaft">Дізнавайтесь першим</h5>
+                    <p class="contact_us-text-info text-gray pr-3 mb-4">Підписуйтесь на розсилку і отримуйте актуальні пропозиції на почту</p>
+                    <form action="">
+                        <input type="email" placeholder="Email" class="input pl-3">
+                        <button type="submit" class="btn btn-success py-2">Підписатись</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="icon-card"></div>
+            </div>
+            <div class="col-12 text-center mt-2">
+                <span class="text-silver-chalice text-copyright">Copyright © 2019 Orto-Med. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modal login-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Увійти в особистий кабінет</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 mb-4" required>
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Увійти</button>
+                </form>
+                <p class="text-mine-shaft mx-auto main-text">Увійти за допомогою</p>
+                <div class="block-login-service mt-3 mb-4">
+                    <img src="static/img/img-service.png" width="328"  alt="">
+                </div>
+                <button type="button" data-toggle="modal" data-target="#registrationModal"
+                        data-dismiss="modal" class="btn btn-outline-success py-2 w-100">Зареєструватися</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal registration-->
+<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Реєстрація</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 mb-4" required >
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Зареєструватися</button>
+                </form>
+                <p class="text-mine-shaft main-text w-100 mb-0">
+                    <span class="text-dove-gray d-block mb-1">Натискаючи на цю кнопку, ви погоджуєтеся з умовами</span>
+                    Користувальницької угоди</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal forgotPassword-->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-2">Забули пароль?</h5>
+                <p class="info-text text-mine-shaft">Напишіть свій Email і ми надішлемо вам листа для відновлення пароля</p>
+                <form action="" class="w-100 mt-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <button type="submit" class="btn btn-success py-2 w-100">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/navbar.js"></script>
+<script src="static/js/input.js"></script>
+<script src="static/js/select.js"></script>
+<script src="static/js/accordion.js"></script>
+</body>
+</html>

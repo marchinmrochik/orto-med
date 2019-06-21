@@ -10,6 +10,8 @@
 @import "select.css";
 @import "pagination.css";
 @import "collapse-accrodion.css";
+@import "check-box.css";
+@import "product-preview.css";
 
 @import "section-intro.css";
 @import "section-subcategories.css";
@@ -18,5 +20,6 @@
 @import "section-blog.css";
 @import "section-navigate.css";
 @import "section-filter.css";
+@import "section-catalog-product.css";
 
 @import "article-page.css";

@@ -1,0 +1,61 @@
+.title-group-check {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.custom-checkbox, .custom-control-label, .custom-control-input {
+    cursor: pointer;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: var(--gray);
+}
+
+.custom-control-label:before {
+    background: var(--gallery);
+    border: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-color: var(--mine-shaft);
+    border-radius: 3px;
+    border: none;
+    background-image: url("../img/icons/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 47%;
+    background-size: initial;
+}
+
+.custom-control-label {
+    color: var(--shark);
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.custom-checkbox.price {
+    padding-left: 0px;
+}
+
+.custom-checkbox.price .custom-control-label{
+    color: var(--oslo-gray);
+}
+
+.custom-checkbox.price .custom-control-label:after, .custom-checkbox.price .custom-control-label:before {
+    content: none;
+}
+
+.custom-checkbox.price .custom-control-input:checked~.custom-control-label, .custom-checkbox.price .custom-control-label:hover {
+    color: var(--shark);
+}

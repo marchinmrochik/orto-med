@@ -1,0 +1,37 @@
+.section-catalog-product-preview .current-categories-name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.section-catalog-product-preview .num-product {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.section-catalog-product-preview .block-sort, .section-catalog-product-preview .block-filter-check {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+}
+
+.section-catalog-product-preview .block-sort a {
+    color: var(--silver-chalice);
+}
+
+.section-catalog-product-preview .block-sort a.active, .section-catalog-product-preview .block-sort a:hover,
+.section-catalog-product-preview .block-sort a:focus {
+    color: var(--mine-shaft);
+    text-decoration: underline;
+}
+
+.section-catalog-product-preview .filter-check {
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 13px;
+}
+.section-catalog-product-preview .filter-check:first-child {
+    margin-left: 0;
+}
