@@ -30,6 +30,10 @@
     color: var(--gray);
 }
 
+.text-black {
+    color: var(--black);
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: bold;

@@ -6,7 +6,7 @@
 }
 
 .section-catalog-product-preview .num-product {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Opefilter-checkn Sans", sans-serif;
     font-size: 12px;
 }
 
@@ -31,7 +31,12 @@
     padding-top: 3px;
     padding-bottom: 3px;
     margin-left: 13px;
+    cursor: pointer;
 }
-.section-catalog-product-preview .filter-check:first-child {
+.section-catalog-product-preview .filters-close {
+    cursor: pointer;
+}
+
+  .section-catalog-product-preview .filter-check:first-child {
     margin-left: 0;
 }

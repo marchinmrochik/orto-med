@@ -1,0 +1,71 @@
+.block-catalog-preview {
+     width: calc(100% + 24px);
+}
+
+.product-preview {
+    width: 30%;
+    border-radius: 3px;
+    border: 1px solid var(--alabaster);
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 32px;
+    margin-right: 24px;
+}
+
+.product-preview:first-child {
+    margin-left: 0;
+}
+
+.product-preview.sale:after {
+    content: "Акція";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    text-transform: uppercase;
+    background: var(--mine-shaft);
+    text-align: center;
+    color: var(--white);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 7px 8px;
+}
+
+.product-preview .hover-block {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.product-preview:hover .hover-block {
+    display: block;
+    text-decoration: none;
+}
+
+.product-preview img {
+    width: calc(100% - 1px);
+    object-fit: contain;
+}
+
+.product-preview .product-info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    height: 156px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 16px 24px 28px 24px;
+}
+
+.product-preview .product-info .product-price, .product-preview .product-info .product-price .sale,
+.product-preview .product-info .product-description {
+    font-weight: normal;
+}
+
+.product-preview .product-info .product-title {
+    font-weight: 600;
+}
+
+.product-preview .product-info .product-price .sale {
+    text-decoration: line-through;
+}
