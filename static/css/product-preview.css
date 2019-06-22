@@ -38,6 +38,10 @@
     top: 0;
 }
 
+.product-preview:hover {
+    border: 1px solid var(--sushi);
+}
+
 .product-preview:hover .hover-block {
     display: block;
     text-decoration: none;
