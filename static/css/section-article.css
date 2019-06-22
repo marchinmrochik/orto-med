@@ -61,3 +61,7 @@
     bottom: 0;
     left: 0;
 }
+
+.section-news-article .block-text .main-text {
+    max-width: 575px;
+}
