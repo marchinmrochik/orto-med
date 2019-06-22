@@ -12,6 +12,7 @@
 @import "collapse-accrodion.css";
 @import "check-box.css";
 @import "product-preview.css";
+@import "lightbox.css";
 
 @import "section-intro.css";
 @import "section-subcategories.css";
@@ -23,3 +24,4 @@
 @import "section-catalog-product.css";
 
 @import "article-page.css";
+@import "product-page.css";

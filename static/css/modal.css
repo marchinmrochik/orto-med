@@ -1,45 +1,45 @@
-.modal-dialog {
+.custom-modal .modal-dialog {
     margin-top: 100px;
     max-width: max-content;
 }
-.modal-content >* {
+.custom-modal .modal-content >* {
     font-family: "Open Sans", sans-serif;
 }
 
-.modal-content{
+.custom-modal .modal-content{
     padding: 40px 130px;
 }
 
-.modal-content .container-modal-content {
+.custom-modal .modal-content .container-modal-content {
     width: 400px;
 }
 
-.modal-content .title-modal {
+.custom-modal .modal-content .title-modal {
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
 }
 
-.modal-content  .label-input {
+.custom-modal .modal-content  .label-input {
     font-weight: normal;
     font-size: 16px;
 }
 
-.modal-content  .label-input span {
+.custom-modal .modal-content  .label-input span {
     font-weight: normal;
     font-size: 12px;
     cursor: pointer;
     padding-top: 5px;
 }
 
-.modal-content .main-text {
+.custom-modal .modal-content .main-text {
     font-family: 'Fira Sans', sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
 }
 
-.modal-content .info-text {
+.custom-modal .modal-content .info-text {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -49,13 +49,13 @@
     max-width: 350px;
 }
 
-.modal-content .icon-eye {
+.custom-modal .modal-content .icon-eye {
     position: absolute;
     top: 43px;
     right: 16px;
     cursor: pointer;
 }
 
-.modal-content .icon-eye:hover, .modal-content .icon-eye:focus {
+.custom-modal .modal-content .icon-eye:hover, .modal-content .icon-eye:focus {
     background-color: var(--black);
 }

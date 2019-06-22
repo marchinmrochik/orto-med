@@ -18,6 +18,10 @@
     color: var(--sushi);
 }
 
+.text-shark {
+    color: var(--shark)
+}
+
 .text-mine-shaft {
     color: var(--mine-shaft);
 }

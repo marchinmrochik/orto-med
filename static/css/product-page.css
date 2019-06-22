@@ -1,0 +1,35 @@
+.block-preview-product .img-fluid {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.block-preview-product .list-img a{
+    width: 91px;
+    height: 91px;
+}
+
+.block-preview-product .list-img a:focus, .block-preview-product .list-img a:hover {
+    border: 1px solid var(--sushi);
+}
+
+
+.block-preview-product .main-img{
+    width: 488px;
+    height: 488px;
+}
+
+.product-all-info .product-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.product-all-info  .part-model-price {
+    border-bottom: 1px solid var(--gallery);
+}
+
+.product-all-info  .part-model-price .sale {
+    text-decoration: line-through;
+}

@@ -32,9 +32,12 @@
 .select-phone .bootstrap-select>.dropdown-toggle:active {
     background: transparent!important;
     border: 1px solid var(--sushi);
-    border-radius: 0px;
     outline: none!important;
     box-shadow: none!important;
+}
+
+.select-phone .bootstrap-select>.dropdown-toggle {
+    border-radius: 0!important;
 }
 
 .select-phone .dropdown.bootstrap-select.show .dropdown-toggle {
