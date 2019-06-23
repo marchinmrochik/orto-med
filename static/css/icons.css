@@ -104,6 +104,17 @@
     background-size: contain;
 }
 
+.icon-map {
+    background-color: var(--sushi);
+    -webkit-mask-image: url("../img/icons/icon-map.svg");
+    mask-image: url("../img/icons/icon-map.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 17px;
+    background-size: contain;
+}
+
 .icon-arrow.left {
     transform: rotate(90deg);
 }

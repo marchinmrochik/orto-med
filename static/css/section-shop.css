@@ -1,0 +1,46 @@
+.block-shop-info {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    max-width: 384px;
+    width: 100%;
+}
+
+.block-shop-info img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.block-shop-info .address {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.block-shop-info .address span {
+    font-weight: normal;
+    font-size: 14px;
+}
+.block-shop-info .phone {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--abbey);
+}
+
+.block-shop-info .schedule-work {
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--pale-sky);
+}
+
+.block-shop-info .btn-outline-success {
+    width: 220px;
+}
+
+.block-shop-info .btn-outline-success .icon-map {
+    background-color: var(--sushi);
+}
+
+.block-shop-info .btn-outline-success:hover .icon-map {
+    background-color: var(--white);
+}
