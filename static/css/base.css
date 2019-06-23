@@ -77,6 +77,18 @@ h1 {
     font-weight: bold;
 }
 
+.btn-dark {
+    background: var(--mine-shaft);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 182px;
+}
+
 .input::placeholder {
     color: var(--iron);
 }
@@ -90,6 +102,19 @@ h1 {
     padding-bottom: 9px;
 }
 
+.input-group {
+    width: 409px;
+}
+
+.input-group input, .input-group input:focus {
+    border: none;
+    background: var(--alabaster);
+    border-radius: 3px;
+    height: calc(1.5em + .75rem + 6px);
+}
+
+
+
 button:focus , input:focus {
     outline: none!important;
     box-shadow: none!important;
@@ -101,4 +126,10 @@ button:focus , input:focus {
     font-size: 24px;
     line-height: 33px;
     text-align: center;
+}
+
+@media (max-width: 1023px) {
+    .input-group {
+        width: 100%;
+    }
 }

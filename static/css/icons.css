@@ -72,6 +72,27 @@
     background-size: contain;
 }
 
+.icon-delivery-in-ukraine {
+    background: url("../img/icons/icon-delivery-in-ukraine.svg") no-repeat center;
+    width: 56px;
+    height: 56px;
+    background-size: contain;
+}
+
+.icon-free-delivery {
+    background: url("../img/icons/icon-free-delivery.svg") no-repeat center;
+    width: 56px;
+    height: 56px;
+    background-size: contain;
+}
+
+.icon-product-returns {
+    background: url("../img/icons/icon-product-returns.svg") no-repeat center;
+    width: 56px;
+    height: 56px;
+    background-size: contain;
+}
+
 .icon-arrow {
     background-color: var(--mine-shaft);
     -webkit-mask-image: url("../img/icons/icon-arrow.svg");

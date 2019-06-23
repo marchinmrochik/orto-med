@@ -6,4 +6,6 @@ $('#select-phone').on('changed.bs.select', function (e, clickedIndex, isSelected
     window.location.href =  e.currentTarget[clickedIndex].value
 });
 
-$('#select-modification').selectpicker({})
+$('#select-modification').selectpicker({});
+
+$('#select-quantity').selectpicker({});

@@ -26,10 +26,71 @@
     line-height: 33px;
 }
 
-.product-all-info  .part-model-price {
+.product-all-info  .part-model-price, .product-all-info .part-choice-item, .product-all-info .part-buy-one-click,
+.product-all-info .part-services {
     border-bottom: 1px solid var(--gallery);
 }
 
 .product-all-info  .part-model-price .sale {
     text-decoration: line-through;
+}
+
+.part-choice-item p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.part-choice-item span[data-target="#parametersModal"] {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.part-choice-item {
+    font-family: "Open Sans", sans-serif;
+}
+
+.part-choice-item .btn-success {
+    width: 336px;
+}
+
+.part-services p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.part-description, .part-characteristic, .part-specifics {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.part-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.part-specifics ul {
+    list-style: none;
+}
+
+.part-specifics ul li {
+    position: relative;
+    padding-left: 22px;word-break: break-word;
+}
+
+.part-specifics ul li:before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--alto);
+    left: 0;
+    top: 7.5px;
 }

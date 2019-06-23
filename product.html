@@ -167,7 +167,7 @@
 <div class="container-fluid px-5 px-xl-5 px-lg-3 mb-5 pb-5">
     <div class="row">
         <div class="col-6">
-            <div class="block-preview-product d-flex justify-content-center">
+            <div class="block-preview-product d-flex justify-content-center pl-5">
                 <div class="d-flex flex-column list-img">
                     <a href="static/img/productExample1.png" data-toggle="lightbox" data-gallery="gallery">
                         <img src="static/img/productExample1.png" class="img-fluid">
@@ -191,21 +191,105 @@
             </div>
         </div>
         <div class="col-6">
-            <div class="product-all-info">
+            <div class="product-all-info pr-5">
                 <h4 class="product-title text-black mb-4">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</h4>
                 <section class="part-model-price pb-3">
                     <p class="text-silver-chalice">Артикул: <span class="text-shark">OSD-MOD-1-45</span></p>
                     <p class="text-silver-chalice">Ціна: <span class="text-shark">4 580 грн </span> <span class="sale ml-3">1 000 000 грн</span></p>
                 </section>
-                <section class="part-choice-item pb-3">
+                <section class="part-choice-item pb-3 pt-3 mt-3">
                     <p class="d-flex justify-content-between text-silver-chalice">Вибір модифікації: <span class="text-dove-gray"  data-toggle="modal" data-target="#parametersModal">Розмірна сітка</span></p>
-                    <div class="mr-5 select-modification">
+                    <div class="select-modification mb-3">
                         <select class="selectpicker" id="select-modification">
                             <option>[13990]</option>
                             <option>[13991]</option>
                             <option>[13992]</option>
                         </select>
                     </div>
+                    <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                        <div class="d-flex align-items-center">
+                            <span class="mr-3 text-silver-chalice">Кількість:</span>
+                            <div class="select-quantity mr-3">
+                                <select class="selectpicker" id="select-quantity">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success py-2 text-center ml-3">Додати до кошика</button>
+                    </div>
+                </section>
+                <section class="part-buy-one-click pb-3 pt-3 mt-3">
+                    <p>Купити в один клік</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="+38 (___) ___ __ __" aria-label="Recipient's username">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" type="button">Замовити</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="part-services pb-3 pt-3 mt-3">
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-free-delivery"></div>
+                            <p class="mb-0 ml-3 text-emperor">Безкоштовна доставка від 1000 грн</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-delivery-in-ukraine"></div>
+                            <p class="mb-0 ml-3 text-emperor">Доставка по Україні від 1 до 5 днів</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-product-returns"></div>
+                            <p class="mb-0 ml-3 text-emperor">Повернення та обмін протягом 14 днів</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="part-description pt-3 mt-4">
+                    <p class="part-title text-mine-shaft mb-3">Опис:</p>
+                    <p class="text-emperor mb-0">
+                        Візок багатофункціональний з легкою алюмінієвою рамою, оснащений відкидною спинкою, що
+                        забезпечує комфортне перебування хворого у візку, в залежності від його стану. Верхня частина
+                        спинки з м'якою подушечкою, при необхідності, легко знімається. Простий механізм складання робить
+                        зберігання і транспортуання візка надзвичайно зручним.
+                    </p>
+                </section>
+                <section class="part-characteristic pt-3 mt-3">
+                    <p class="part-title text-mine-shaft mb-3">Характеристики:</p>
+                    <p class="text-silver-chalice mb-2">Виробник: <span class="text-mine-shaft">OSD</span></p>
+                    <p class="text-silver-chalice mb-2">Максимально допустиме навантаження: <span class="text-mine-shaft">100 кг</span></p>
+                    <p class="text-silver-chalice mb-2">Загальна ширина: <span class="text-mine-shaft">70 см</span></p>
+                    <p class="text-silver-chalice mb-2">Вага виробу: <span class="text-mine-shaft">20,3 кг</span></p>
+                    <p class="text-silver-chalice mb-2">Колір: <span class="text-mine-shaft">Гірчичний</span></p>
+                    <p class="text-silver-chalice mb-2">Матеріал: <span class="text-mine-shaft">Штучна замша</span></p>
+                    <p class="text-silver-chalice mb-2">Висота спинки: <span class="text-mine-shaft">47,5 см</span></p>
+                    <p class="text-silver-chalice mb-2">Кут нахилу спинки: <span class="text-mine-shaft">180 °</span></p>
+                    <p class="text-silver-chalice mb-2">Діаметр коліс: <span class="text-mine-shaft">22 дюймів</span></p>
+                    <p class="text-silver-chalice mb-2">Висота сидіння від підлоги: <span class="text-mine-shaft">44 см</span></p>
+                    <p class="text-silver-chalice mb-2">Глибина сидіння: <span class="text-mine-shaft">40 см</span></p>
+                    <p class="text-silver-chalice mb-0">Розмір в складеному стані: <span class="text-mine-shaft">34 см</span></p>
+                </section>
+                <section class="part-specifics pt-3 mt-4">
+                    <p class="part-title text-mine-shaft mb-3">Особливості:</p>
+                    <ul class="pl-0 mb-0">
+                        <li class="mb-3">Легка і міцна складна алюмінієва рама з противідкатною системою.</li>
+                        <li class="mb-3">Сидіння і спинка виготовлені з міцної штучної замші,
+                            посередині - вставка з дихаючого, сітчастого акрилу з поролоновим наповнювачем.
+                            Така конструкція сприяє повітряній вентиляції тіла.</li>
+                        <li class="mb-3">Регульований кут нахилу спинки аж до 180 градусів.
+                            Спинка повністю опускається, перетворюючись в спальне місце для користувача.</li>
+                        <li class="d-flex align-items-center mb-3">Зйомний підголівник з м'якою подушечкою для
+                            зручності користувача.</li>
+                        <li class="mb-3">Знімні підлокітники з м'якими накладками.</li>
+                        <li class="mb-3">Відкидні підніжки регулюються по довжині, куту
+                            нахилу, оснащені м'якою опорою для гомілки.</li>
+                        <li class="mb-3">Барабанна гальмівна система більш ефективна і довговічна.</li>
+                        <li class="mb-3">Кут нахилу спинки і гальма регулюються за допомогою
+                            клавіш на ручках для асистента.</li>
+                        <li class="mb-3">Кишеня для речей на спинці..</li>
+                        <li class="mb-0">Задні пневматичні колеса мають розмір 22" і оснащені
+                            світловими відбивачами, передні колеса литі і мають розмір 6".</li>
+                    </ul>
                 </section>
             </div>
         </div>
