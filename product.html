@@ -227,7 +227,7 @@
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="+38 (___) ___ __ __" aria-label="Recipient's username">
                         <div class="input-group-append">
-                            <button class="btn btn-dark" type="button">Замовити</button>
+                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#callBackModal">Замовити</button>
                         </div>
                     </div>
                 </section>
@@ -777,13 +777,99 @@
 <div class="modal custom-modal fade" id="parametersModal" tabindex="-1" role="dialog" aria-labelledby="parametersModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content bg-alabaster">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <div class="container-modal-content d-flex flex-column align-items-center">
-
+                <table class="table-size">
+                    <tbody>
+                        <tr>
+                            <td colspan="4">Розміри</td>
+                        </tr>
+                        <tr class="title-row">
+                            <td>Розмір</td>
+                            <td>Окріжність талії, см</td>
+                            <td>Окружність бедер, см</td>
+                            <td>Окружність бедра, см</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">1</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">2</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">3</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">4</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">5</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">6</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">7</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">8</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                        <tr>
+                            <td class="bg-alabaster">9</td>
+                            <td>58-64</td>
+                            <td>85-90</td>
+                            <td>46-49</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
 
+<!-- modal callBackModal-->
+<div class="modal custom-modal fade" id="callBackModal" tabindex="-1" role="dialog" aria-labelledby="callBackModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <p class="info-text text-mine-shaft">
+                    Дякуємо. Найближчим часом з вами зв’яжеться наш менеджер для підтвердження замовлення
+                </p>
+                <button type="button" data-toggle="modal" data-dismiss="modal"
+                        class="btn btn-success py-2 w-100">Закрити</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="static/js/navbar.js"></script>
 <script src="static/js/input.js"></script>

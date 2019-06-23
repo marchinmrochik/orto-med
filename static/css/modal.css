@@ -10,6 +10,14 @@
     padding: 40px 130px;
 }
 
+#callBackModal .modal-content {
+    padding: 108px 130px;
+}
+
+#parametersModal .modal-content {
+    padding: 80px 88px;
+}
+
 .custom-modal .modal-content .container-modal-content {
     width: 400px;
 }
@@ -58,4 +66,43 @@
 
 .custom-modal .modal-content .icon-eye:hover, .modal-content .icon-eye:focus {
     background-color: var(--black);
+}
+
+#parametersModal .modal-header {
+    position: absolute;
+    z-index: 2;
+    height: 20px;
+    right: 22px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parametersModal .modal-header .modal-title {
+    display: none;
+}
+
+#parametersModal .modal-header .close {
+    display: block;
+    font-family: initial;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--silver-chalice);
+    opacity: 1;
+}
+
+#parametersModal .modal-header .close:not(:disabled):not(.disabled):focus,
+#parametersModal .modal-header .close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+    color: var(--mine-shaft);
+}
+
+#parametersModal .modal-content .container-modal-content {
+    width: auto;
 }
