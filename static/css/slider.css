@@ -1,0 +1,53 @@
+.section-slider .slider-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-slider .slider-subtext {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.section-slider .slider .product-preview img {
+    width: 338px;
+}
+
+.section-slider .slider .product-preview {
+    width: 340px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 24px;
+}
+
+.section-slider .slider .product-preview:first-child {
+    margin-left: 0;
+}
+
+.section-slider .slider-navigation .custom-arrow {
+    width: 35px;
+    height: 35px;
+    background-color: var(--alabaster);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.section-slider .slider-navigation .custom-arrow[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events:none;
+    cursor: not-allowed;
+}
+
+.section-slider .slider-navigation .custom-arrow:hover,
+.section-slider .slider-navigation .custom-arrow:focus {
+    background-color: var(--sushi);
+}
+.section-slider .slider-navigation .custom-arrow:hover .icon-arrow,
+.section-slider .slider-navigation .custom-arrow:focus .icon-arrow{
+    background-color: var(--white);
+}
+
