@@ -11,7 +11,9 @@
 .wave-bg {
     background: url(../img/wave-bg.svg) no-repeat bottom;
     width: 100%;
-    height: 205px;
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+    height: fill-available;
     background-size: contain;
     position: absolute;
     z-index: 3;
