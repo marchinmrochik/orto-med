@@ -16,6 +16,12 @@
 
 #parametersModal .modal-content {
     padding: 80px 88px;
+    background: var(--white);
+}
+
+#addProductInCart .modal-content {
+    padding: 18px 0;
+    background: var(--white);
 }
 
 .custom-modal .modal-content .container-modal-content {
@@ -86,7 +92,7 @@
     display: none;
 }
 
-#parametersModal .modal-header .close {
+#parametersModal .modal-header .close, #addProductInCart .modal-header .close {
     display: block;
     font-family: initial;
     padding: 0;
@@ -98,11 +104,70 @@
 }
 
 #parametersModal .modal-header .close:not(:disabled):not(.disabled):focus,
-#parametersModal .modal-header .close:not(:disabled):not(.disabled):hover {
+#parametersModal .modal-header .close:not(:disabled):not(.disabled):hover,
+#addProductInCart .modal-header .close:not(:disabled):not(.disabled):focus,
+#addProductInCart .modal-header .close:not(:disabled):not(.disabled):hover {
     opacity: 1;
     color: var(--mine-shaft);
 }
 
 #parametersModal .modal-content .container-modal-content {
     width: auto;
+}
+
+#addProductInCart .modal-header {
+    border: none;
+    position: relative;
+}
+
+#addProductInCart .modal-header .close {
+    position: absolute;
+    right: 24px;
+    top: -3px;
+}
+
+#addProductInCart .modal-header .modal-title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#addProductInCart .container-modal-footer .total-price {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#addProductInCart .product-preview {
+    width: auto;
+    border-radius: 0;
+    margin-right: 0;
+}
+
+#addProductInCart .product-preview img {
+    width: 210px;
+    object-fit: contain;
+}
+
+#addProductInCart .product-preview .product-info {
+    height: initial;
+    border-radius: 0;
+    padding: 16px 8px 0 24px;
+}
+
+#addProductInCart .product-preview p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+#addProductInCart .product-preview p.product-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#addProductInCart .modal-content .container-modal-content {
+    width: 600px;
 }
