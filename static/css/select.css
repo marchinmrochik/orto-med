@@ -10,6 +10,10 @@
    width: 111px;
 }
 
+.select-phone .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    padding-bottom: 4px;
+}
+
 .select-phone .bootstrap-select .dropdown-toggle .filter-option-inner-inner .d-none {
     display: inline-block!important;
     margin-right: 8px;
@@ -27,7 +31,7 @@
     background-color: var(--mine-shaft);
     -webkit-mask-image: url("../img/icons/icon-arrow.svg");
     mask-image: url("../img/icons/icon-arrow.svg");
-    margin-top: 3px;
+    margin-top: -1px;
     transition: transform 0.5s;
 }
 
