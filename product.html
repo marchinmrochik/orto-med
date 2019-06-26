@@ -169,8 +169,8 @@
 
 <div class="container-fluid px-5 px-xl-5 px-lg-3 mb-5 pb-5">
     <div class="row">
-        <div class="col-6">
-            <div class="block-preview-product d-flex justify-content-center pl-5">
+        <div class="col-6 position-relative test">
+            <div class="block-preview-product d-flex justify-content-center pl-5" id="preview-product">
                 <div class="d-flex flex-column list-img">
                     <a href="static/img/productExample1.png" data-toggle="lightbox" data-gallery="gallery" data-type="image">
                         <img src="static/img/productExample1.png" class="img-fluid" >
@@ -914,13 +914,22 @@
 <script src="static/js/slick.min.js"></script>
 <script>
     $(document).ready(function() {
+        let topPos = $('#preview-product').offset().top;
+        $('#preview-product').css('width', $('.test').width);
+        positionBlock()
+
         $("#phone").mask("+38 ?(999) 999 9999");
+
         $('#slider1, #slider2').slick({
             infinite: false,
             variableWidth: true,
             slidesToShow: 3,
             slidesToScroll: 1,
             arrow: false
+        });
+
+        $(window).scroll(function() {
+            positionBlock()
         });
         
         $(document).on('click', '.custom-arrow.left', function () {
@@ -946,6 +955,20 @@
                 arrowRight.trigger( "click" )
             }
         });
+
+        function positionBlock() {
+            let top = $(document).scrollTop();
+            if (top > topPos) {
+                $('#preview-product').addClass('position-fixed');
+
+                if( top >= $('.test').outerHeight() - 466) {
+                    $('#preview-product').removeClass('position-fixed').addClass('position-absolute').css('bottom' , 0);
+                } else {
+                    $('#preview-product').removeClass('position-absolute').addClass('position-fixed').css('bottom' , '');
+                }
+            }
+        }
+
     });
 </script>
 </body>
