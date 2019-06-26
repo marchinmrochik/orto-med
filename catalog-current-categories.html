@@ -303,21 +303,13 @@
             </div>
             <div class="d-flex justify-content-between flex-wrap">
                 <div class="block-filter-check d-flex flex-wrap align-items-center mt-2">
-                    <div class="bg-alabaster filter-check px-3 d-flex justify-content-between align-items-center">
-                        <p class="mb-0 mr-3 text-mine-shaft">Активний</p>
-                        <div class="icon-close"></div>
-                    </div>
-                    <div class="bg-alabaster filter-check px-3 d-flex justify-content-between align-items-center">
-                        <p class="mb-0 mr-3 text-mine-shaft">Invacare</p>
-                        <div class="icon-close"></div>
-                    </div>
-                    <p class="text-silver-chalice mb-0 ml-4 filters-close">Очистити всі фільтри</p>
+                    <p class="text-silver-chalice mb-0 ml-3 filters-close d-none mb-2">Очистити всі фільтри</p>
                 </div>
                 <div class="block-sort d-flex align-items-center justify-content-end mt-2">
-                    <p class="text-mine-shaft mb-0">Сортування:</p>
-                    <a class="active ml-4" href="">З більш дорогих</a>
-                    <a class="ml-4" href="">З більш дешевих</a>
-                    <a class="ml-4" href="">Акції</a>
+                    <p class="text-mine-shaft mb-2">Сортування:</p>
+                    <a class="active ml-4 mb-2" href="">З більш дорогих</a>
+                    <a class="ml-4 mb-2" href="">З більш дешевих</a>
+                    <a class="ml-4 mb-2" href="">Акції</a>
                 </div>
             </div>
             <div class="d-flex flex-wrap mt-4 pt-2 justify-content-between block-catalog-preview">
@@ -688,5 +680,28 @@
 <script src="static/js/input.js"></script>
 <script src="static/js/select.js"></script>
 <script src="static/js/accordion.js"></script>
+
+<script>
+    $(' input[type=checkbox] ').on('click', function () {
+        let thisText = $(this).next("label").text().split('(')[0];
+        if($(this).prop('checked')) {
+            $('.block-filter-check').prepend('<div class="bg-alabaster filter-check px-3 d-flex justify-content-between align-items-center mb-2">\n' +
+                '                        <p class="mb-0 mr-3 text-mine-shaft"> '+ thisText +'</p>\n' +
+                '                        <div class="icon-close"></div>\n' +
+                '                    </div>');
+        } else {
+            for(let num = 0; num < $('.filter-check p').length; num++) {
+                $.trim($($('.filter-check p')[num]).text()) == $.trim(thisText) ? $($('.filter-check')[num]).remove() : ''
+            }
+         }
+
+        $('.filter-check').length == 0 ? $('.filters-close').addClass('d-none').removeClass('d-block') : $('.filters-close').addClass('d-block').removeClass('d-none')
+    })
+
+    $(document).on('click', '.filters-close', function () {
+        $('.filter-check').remove();
+        $('.filters-close').addClass('d-none').removeClass('d-block')
+    })
+</script>
 </body>
 </html>
