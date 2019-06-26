@@ -18,6 +18,22 @@
     display: none;
 }
 
+.modal.fade .modal-dialog {
+    transition: max-width ease-in-out 0.2s;
+}
+
+.modal.fade .ekko-lightbox-container {
+    transition: height ease-in-out 0.2s;
+}
+
+.ekko-lightbox-nav-overlay a {
+    color: var(--silver-chalice);
+}
+
+.ekko-lightbox-nav-overlay a:hover {
+    color: var(--gray);
+}
+
 .ekko-lightbox .modal-header .close {
     display: block;
     padding: 0 0 6px 1px;
