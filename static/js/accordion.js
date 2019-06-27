@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    location.hash && $(location.hash + '.collapse').collapse('show');
+});
+
 $('.panel-collapse').on('show.bs.collapse', function () {
     $(this).siblings('.panel-heading').addClass('active');
 });
