@@ -41,30 +41,33 @@ header {
     background-color: var(--sushi);
 }
 
-#nav-tab_content {
-    display: none!important;
-}
-
-#nav-tab_content.show_block {
-    display: block!important;
+.tab-content{
+    display: none;
+    position: fixed;
     width: 100%;
+    top: 94px;
+    left: 0;
     background: var(--white);
     padding: 38px 0 75px 81px;
     border-bottom: 1px solid var(--sushi);
+    border-top: 1px solid var(--alabaster);
+    z-index: 55;
+}
+.header-bottom .nav-link {
+    line-height: 35px;
+}
+.header-bottom .block-item-menu:hover .tab-content {
+    display: block;
 }
 
-#nav-tab_content .subcategories-link {
+.tab-content .subcategories-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
-#nav-tab_content .subcategories-link:focus, #nav-tab_content .subcategories-link:hover {
+.tab-content .subcategories-link:focus, .tab-content .subcategories-link:hover {
     color: var(--sushi);
     text-decoration: none!important;
-}
-
-#nav-tab_content .tab-pane.active {
-    display: flex;
 }
 
 .block-search {
