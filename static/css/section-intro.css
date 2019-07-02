@@ -22,8 +22,8 @@
 }
 
 .intro-img {
-    max-width: 752px;
-    height: 491px;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
 }
 

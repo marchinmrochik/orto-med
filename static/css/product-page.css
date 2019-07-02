@@ -16,9 +16,9 @@
 }
 
 
-.block-preview-product .main-img{
-    width: 488px;
-    height: 488px;
+.block-preview-product .main-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .product-all-info .product-title {
@@ -95,4 +95,11 @@
     background-color: var(--alto);
     left: 0;
     top: 7.5px;
+}
+
+@media (min-width: 1300px) {
+    .block-preview-product .main-img {
+        width: 488px;
+        height: 488px;
+    }
 }
