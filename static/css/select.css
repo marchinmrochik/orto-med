@@ -2,7 +2,9 @@
     width: 190px;
 }
 
-.select-modification .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+.select-modification .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+.select-delivery .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+.select-department .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
     width: 100%;
 }
 
@@ -23,7 +25,9 @@
     color: var(--sushi);
 }
 
-.select-phone .dropdown-toggle::after, .select-modification .dropdown-toggle::after, .select-quantity .dropdown-toggle::after{
+.select-phone .dropdown-toggle::after, .select-modification .dropdown-toggle::after,
+.select-quantity .dropdown-toggle::after, .select-delivery .dropdown-toggle::after,
+.select-department .dropdown-toggle::after{
     content: "";
     display: block;
     width: 10px;
@@ -36,13 +40,16 @@
 }
 
 .select-modification .dropdown-toggle, .select-modification .dropdown-item:focus, .select-modification .dropdown-item:hover,
-.select-quantity .dropdown-toggle, .select-quantity .dropdown-item:focus, .select-quantity .dropdown-item:hover {
+.select-quantity .dropdown-toggle, .select-quantity .dropdown-item:focus, .select-quantity .dropdown-item:hover,
+.select-delivery .dropdown-toggle, .select-delivery .dropdown-item:focus, .select-delivery .dropdown-item:hover,
+.select-department .dropdown-toggle, .select-department .dropdown-item:focus, .select-department .dropdown-item:hover{
     background: var(--alabaster);
     color: var(--mine-shaft);
 }
 
 .select-phone .dropdown.show .dropdown-toggle::after, .select-modification .dropdown.show .dropdown-toggle::after,
-.select-quantity .dropdown.show .dropdown-toggle::after {
+.select-quantity .dropdown.show .dropdown-toggle::after, .select-delivery .dropdown.show .dropdown-toggle::after,
+.select-department .dropdown.show .dropdown-toggle::after{
     transform: rotate(180deg);
     transition: transform 0.5s;
 }
@@ -57,7 +64,10 @@
 
 .select-modification .bootstrap-select>.dropdown-toggle:focus, .select-modification .bootstrap-select>.dropdown-toggle:hover,
 .select-modification .bootstrap-select>.dropdown-toggle:active, .select-quantity .bootstrap-select>.dropdown-toggle:focus,
-.select-quantity .bootstrap-select>.dropdown-toggle:hover, .select-quantity .bootstrap-select>.dropdown-toggle:active {
+.select-quantity .bootstrap-select>.dropdown-toggle:hover, .select-quantity .bootstrap-select>.dropdown-toggle:active,
+.select-delivery .bootstrap-select>.dropdown-toggle:focus, .select-delivery .bootstrap-select>.dropdown-toggle:hover,
+.select-delivery .bootstrap-select>.dropdown-toggle:active,.select-department .bootstrap-select>.dropdown-toggle:focus,
+.select-department .bootstrap-select>.dropdown-toggle:hover, .select-department .bootstrap-select>.dropdown-toggle:active  {
     outline: none!important;
     box-shadow: none!important;
 }
@@ -96,7 +106,9 @@
 }
 
 .select-modification .dropdown-item.active, .select-modification .dropdown-item:active,
-.select-quantity .dropdown-item.active, .select-quantity .dropdown-item:active{
+.select-quantity .dropdown-item.active, .select-quantity .dropdown-item:active,
+.select-delivery .dropdown-item.active, .select-delivery .dropdown-item:active,
+.select-department .dropdown-item.active, .select-department .dropdown-item:active{
     background: var(--alabaster);
     color: var(--mine-shaft);
 }
@@ -109,11 +121,14 @@
 }
 
 .select-modification .bootstrap-select .dropdown-toggle .filter-option-inner-inner,
-.select-quantity .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+.select-quantity .bootstrap-select .dropdown-toggle .filter-option-inner-inner,
+.select-delivery .bootstrap-select .dropdown-toggle .filter-option-inner-inner,
+.select-department .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
     color: var(--mine-shaft);
 }
 
-.select-modification .dropdown-item, .select-quantity .dropdown-item {
+.select-modification .dropdown-item, .select-quantity .dropdown-item, .select-delivery .dropdown-item,
+.select-department .dropdown-item {
     color: var(--gray);
 }
 

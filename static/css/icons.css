@@ -122,3 +122,27 @@
 .icon-arrow.right {
     transform: rotate(-90deg);
 }
+
+.icon-delete {
+    background-color: var(--silver-chalice);
+    -webkit-mask-image: url("../img/icons/icon-delete.svg");
+    mask-image: url("../img/icons/icon-delete.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 13px;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.icon-edit {
+    background-color: var(--silver-chalice);
+    -webkit-mask-image: url("../img/icons/icon-edit.svg");
+    mask-image: url("../img/icons/icon-edit.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    cursor: pointer;
+}

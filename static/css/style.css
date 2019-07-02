@@ -15,6 +15,7 @@
 @import "lightbox.css";
 @import "slider.css";
 @import "table.css";
+@import "tabs.css";
 
 @import "section-intro.css";
 @import "section-subcategories.css";
@@ -28,3 +29,4 @@
 
 @import "article-page.css";
 @import "product-page.css";
+@import "personal-cabinet.css";

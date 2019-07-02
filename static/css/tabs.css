@@ -1,0 +1,34 @@
+#personal-cabinet-tab {
+    max-width: 240px;
+}
+
+#personal-cabinet-tab h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+#personal-cabinet-tab  .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    line-height: 18px;
+}
+
+#personal-cabinet-tab  .nav-link:active, #personal-cabinet-tab  .nav-link:hover,
+#personal-cabinet-tab  .nav-link:focus,#personal-cabinet-tab  .nav-link.active {
+    color: var(--mine-shaft);
+}
+
+#personal-cabinet-tabContent {
+    min-height: 470px;
+    padding: 40px 56px;
+    background: var(--white);
+}

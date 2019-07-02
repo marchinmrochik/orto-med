@@ -41,7 +41,7 @@ header {
     background-color: var(--sushi);
 }
 
-.tab-content{
+#nav-tab .tab-content {
     display: none;
     position: fixed;
     width: 100%;
@@ -56,16 +56,16 @@ header {
 .header-bottom .nav-link {
     line-height: 35px;
 }
-.header-bottom .block-item-menu:hover .tab-content {
+.header-bottom #nav-tab .block-item-menu:hover .tab-content {
     display: block;
 }
 
-.tab-content .subcategories-link {
+#nav-tab .tab-content .subcategories-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
-.tab-content .subcategories-link:focus, .tab-content .subcategories-link:hover {
+#nav-tab .tab-content .subcategories-link:focus, #nav-tab .tab-content .subcategories-link:hover {
     color: var(--sushi);
     text-decoration: none!important;
 }

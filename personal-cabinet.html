@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-en_US.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3 header-top bg-alabaster">
+        <div class="row d-flex justify-content-between">
+            <nav class="d-flex align-items-center">
+                <a class="nav-link text-dove-gray pr-5" href="#">Доставка та оплата</a>
+                <a class="nav-link text-dove-gray px-2" href="#">Повернення та обмін</a>
+                <a class="nav-link text-dove-gray pl-5" href="#">Наші магазини</a>
+            </nav>
+            <div class="d-flex align-items-center">
+                <div class="mr-5 select-phone">
+                    <select class="selectpicker" id="select-phone">
+                        <option value="tel:+380674604626"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>067 460 46 26</a>">
+                        </option>
+                        <option value="tel:+380954440357"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>095 444 03 57</a>">
+                        </option>
+                        <option value="tel:+380935057921"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>093 505 79 21</a>">
+                        </option>
+                    </select>
+
+                </div>
+                <nav class="d-flex">
+                    <a class="nav-link text-dove-gray active pl-0 pr-2" href="#">Укр</a>
+                    <a class="nav-link text-dove-gray pl-3" href="#">Рус</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header-bottom px-5 px-xl-5 px-lg-3">
+        <div class="row justify-content-between">
+            <div class="col-lg-8 d-flex align-items-center">
+                <a href="home.html" class="icon-logo"></a>
+                <div class="nav pl-5 pl-lg-4" id="nav-tab" role="tablist">
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0"
+                           href="catalog-categories.html#collapseOne">Реабілітація</a>
+                        <div class="tab-content">
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Інвалідні візки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Підйомники та пандуси</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Ходунки та роллери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Палиці</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Милиці</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та
+                                        аксесуари</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та
+                                        подушки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та
+                                        крісла-каталки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і
+                                        туалету</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0"
+                           href="catalog-categories.html#collapseTwo">Ортопедія</a>
+                        <div class="tab-content">
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та
+                                        аксесуари</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та
+                                        подушки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та
+                                        крісла-каталки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і
+                                        туалету</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0"
+                           href="catalog-categories.html#collapseThree">Медтехніка</a>
+                        <div class="tab-content">
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Вітафон</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Термометри і гігромертри</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Аспіратори</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Кисневі концентратори</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Негатоскопи</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Кварцові лампи</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Алкотестери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Інгалятори (небулайзери)</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Глюкометри</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0"
+                           href="catalog-categories.html#collapseFour">Ваше здоров’я</a>
+                        <div class="tab-content">
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Компресійний та
+                                        антиемболічний трикотаж</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Для діагностики і
+                                        ліування</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичний одяг</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Ваги</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Акушерство, педіатрія,
+                                        гінекологія</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Аплікатори Ляпко</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Масажери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Гідромасажні ванночки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Іонізатори, зволожувачі,
+                                        очищувачі повітря</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link text-mine-shaft pr-4 pr-lg-0" href="">Блог</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                <div class="block-search">
+                    <input type="search" class="search py-3" placeholder="Search">
+                </div>
+                <div class="d-flex align-items-center ml-5 ml-lg-4">
+                    <div class="icon-user mr-3 mr-lg-2" data-toggle="modal" data-target="#loginModal"></div>
+                    <div class="icon-cart ml-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="section-navigate">
+</section>
+
+<div class="container-fluid px-5 px-xl-5 px-lg-3 pb-5 bg-alabaster">
+    <div class="row pt-5 pb-5">
+        <div class="col-lg-3 d-flex justify-content-center pr-3 pr-lg-0">
+            <div class="nav flex-column nav-pills" id="personal-cabinet-tab" role="tablist" aria-orientation="vertical">
+                <h5 class="text-mine-shaft mb-4">Особистий кабінет</h5>
+                <a class="nav-link text-silver-chalice active mb-3" id="contact-data-tab" data-toggle="pill"
+                   href="#contact-data" role="tab" aria-controls="contact-data" aria-selected="true">Контактні дані</a>
+                <a class="nav-link text-silver-chalice mb-3" id="data-address-tab" data-toggle="pill"
+                   href="#data-address" role="tab" aria-controls="data-address" aria-selected="false">Адреса</a>
+                <a class="nav-link text-silver-chalice mb-3" id="data-purchase-history-tab" data-toggle="pill"
+                   href="#data-purchase-history" role="tab" aria-controls="data-purchase-history" aria-selected="false">Історія
+                    покупок</a>
+                <a class="nav-link text-silver-chalice mb-3" id="change-password-tab" data-toggle="pill"
+                   href="#change-password" role="tab" aria-controls="change-password" aria-selected="false">Змінити
+                    пароль</a>
+                <a class="nav-link text-silver-chalice mb-3" id="contact-us-tab" data-toggle="pill" href="#contact-us"
+                   role="tab" aria-controls="contact-us" aria-selected="false">Зв’язатись з нами</a>
+                <a class="nav-link text-silver-chalice mb-3r" href="home.html">Вийти</a>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-9 ml-xl-auto mr-xl-5 pr-xl-4">
+            <div class="tab-content" id="personal-cabinet-tabContent">
+                <div class="tab-pane fade show active" id="contact-data" role="tabpanel"
+                     aria-labelledby="contact-data-tab">
+                    <form class="personal-cabinet-form form-contact-data">
+                        <div class="input-group d-flex flex-column mb-3 w-100">
+                            <p class="text-silver-chalice mb-2">Email</p>
+                            <input class="px-3" type="email" name="email" required>
+                        </div>
+                        <div class="input-group d-flex mb-3 w-100">
+                            <div class="w-100 d-flex">
+                                <div class="w-100">
+                                    <p class="text-silver-chalice mb-2">Ім’я</p>
+                                    <input class="w-100 px-3" type="text" name="user-first-name" required>
+                                </div>
+                                <div class="w-100">
+                                    <p class="text-silver-chalice mb-2">Прізвище</p>
+                                    <input class="w-100 px-3" type="text" name="required-second-name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group d-flex flex-column mb-4 w-100">
+                            <p class="text-silver-chalice mb-2">Телефон</p>
+                            <input type="text" class="px-3" id="user-phone" name="user-phone" required>
+                        </div>
+                        <button class="btn btn-success w-100 py-2">Зберегти</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="data-address" role="tabpanel" aria-labelledby="data-address-tab">
+                    <form class="d-none personal-cabinet-form form-address" id="stateForm2">
+                        <p class="text-black mb-3">На даний у вас відсутні збережені адреси</p>
+                        <div class="loaded-address-card d-flex bg-alabaster py-3 px-4 mb-3 justify-content-between">
+                            <div class="d-flex flex-column pr-5">
+                                <span class="title-address">Адрес 1</span>
+                                <span class="address-card text-black">На відділення «Нова Пошта» №88, вул. Садова 88</span>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="icon-delete"></div>
+                                <div class="icon-edit"></div>
+                            </div>
+                        </div>
+                        <div class="loaded-address-card d-flex bg-alabaster py-3 px-4 mb-3 justify-content-between">
+                            <div class="d-flex flex-column pr-5">
+                                <span class="title-address">Адрес 2</span>
+                                <span class="address-card text-black">Кур’єром «Нова Пошта» м. Кременчуг, вул. Садова 88, кв. 8</span>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="icon-delete"></div>
+                                <div class="icon-edit"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-success py-2 mt-2">Добавити адресу</button>
+                    </form>
+                    <form class="personal-cabinet-form form-address" id="stateForm0">
+                        <p class="text-black mb-3">На даний у вас відсутні збережені адреси</p>
+                        <button class="btn btn-success py-2 mt-2" type="button" id="state0">Добавити адресу</button>
+                    </form>
+                    <form class="d-none personal-cabinet-form form-address city" id="stateForm1">
+                        <div class="input-group d-flex flex-column mb-3 w-100">
+                            <p class="text-silver-chalice mb-2">Місто</p>
+                            <input class="px-3" type="text" name="name-city" required>
+                        </div>
+                        <div class="d-none block-delivery-select">
+                            <p class="text-silver-chalice mb-2">Спосіб доставки</p>
+                            <div class="select-delivery mb-3">
+                                <select class="selectpicker" id="select-delivery">
+                                    <option>Курє’ром “Нова Пошта”</option>
+                                    <option>На відділення “Нова Пошта”</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-none block-delivery-department">
+                            <p class="text-silver-chalice mb-2">Номер відділення</p>
+                            <div class="select-department mb-3">
+                                <select class="selectpicker" id="select-department">
+                                    <option>Поштове відділення №91. Чернігів</option>
+                                    <option>Поштове відділення №75. Чернігів</option>
+                                    <option>Поштове відділення №25. Чернігів</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-none block-delivery-courier">
+                            <div class="input-group d-flex flex-column mb-3 w-100">
+                                <p class="text-silver-chalice mb-2">Вулиця</p>
+                                <input class="px-3" type="email" name="user-street" required>
+                            </div>
+                            <div class="input-group d-flex mb-3 w-100">
+                                <div class="w-100 d-flex">
+                                    <div class="w-100">
+                                        <p class="text-silver-chalice mb-2">Будинок</p>
+                                        <input class="w-100 px-3" type="text" name="user-house" required>
+                                    </div>
+                                    <div class="w-100">
+                                        <p class="text-silver-chalice mb-2">Квартира</p>
+                                        <input class="w-100 px-3" type="text" name="user-flat" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-success py-2 mt-2 d-none w-100" type="button" id="state1">Зберегти
+                        </button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="data-purchase-history" role="tabpanel"
+                     aria-labelledby="data-purchase-history-tab">
+                    <form class="personal-cabinet-form form-purchase-history">
+                        <p class="text-black mb-3">Ви поки ще нічого не купили</p>
+                        <button class="btn btn-success py-2 mt-2" type="button">Перейти до каталогу</button>
+                    </form>
+                    <form class="personal-cabinet-form form-purchase-history catalog d-none">
+                        <div class="block-catalog-orders mb-5">
+                            <div class="header-block pl-3 py-2 d-flex mb-3">
+                                <p class="text-white m-0 date-orders">Дата: <span>02.01.2019</span></p>
+                                <p class="text-white m-0 number-orders">Номер замовлення: <span>34653463</span></p>
+                                <p class="text-white m-0 total-sum-orders">Закальна сума: <span>9 160 грн</span></p>
+                            </div>
+                            <div class="block-order bg-alabaster d-flex mb-3">
+                                <img src="static/img/productExample1.png" class="order-img" alt="">
+                                <div class="px-4 py-3 d-flex flex-column info-product">
+                                    <p class="title-order text-black mb-2">Багатофункціональний візок з високою спинкою
+                                        OSD-MOD-1-45</p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Вибір модифікації: <span
+                                            class="text-mine-shaft">[13990]</span></p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Кількість: <span
+                                            class="text-mine-shaft">1</span></p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Ціна: <span class="text-mine-shaft">4 580 грн</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-order bg-alabaster d-flex">
+                                <img src="static/img/productExample2.png" class="order-img" alt="">
+                                <div class="px-4 py-3 d-flex flex-column info-product">
+                                    <p class="title-order text-black mb-2">Багатофункціональний візок з високою спинкою
+                                        OSD-MOD-1-45</p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Вибір модифікації: <span
+                                            class="text-mine-shaft">[13990]</span></p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Кількість: <span
+                                            class="text-mine-shaft">1</span></p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Ціна: <span class="text-mine-shaft">4 580 грн</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-catalog-orders mt-3">
+                            <div class="header-block pl-3 py-2 d-flex mb-3">
+                                <p class="text-white m-0 date-orders">Дата: <span>02.01.2019</span></p>
+                                <p class="text-white m-0 number-orders">Номер замовлення: <span>34653463</span></p>
+                                <p class="text-white m-0 total-sum-orders">Закальна сума: <span>9 160 грн</span></p>
+                            </div>
+                            <div class="block-order bg-alabaster d-flex">
+                                <img src="static/img/productExample1.png" class="order-img" alt="">
+                                <div class="px-4 py-3 d-flex flex-column info-product">
+                                    <p class="title-order text-black mb-2">Багатофункціональний візок з високою спинкою
+                                        OSD-MOD-1-45</p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Вибір модифікації: <span
+                                            class="text-mine-shaft">[13990]</span></p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Кількість: <span
+                                            class="text-mine-shaft">1</span></p>
+                                    <p class="text-silver-chalice mb-2 mr-2">Ціна: <span class="text-mine-shaft">4 580 грн</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+                    <form class="personal-cabinet-form form-change-password">
+                        <div class="position-relative input-group d-flex flex-column w-100 mb-3">
+                            <p class="label-input text-silver-chalice d-flex justify-content-between mb-2">
+                                Старий пароль
+                                <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                            <input type="password" name="password" class="input w-100 px-3" required="">
+                            <div class="icon-eye"></div>
+                        </div>
+                        <div class="position-relative d-flex flex-column input-group w-100 mb-4">
+                            <p class="label-input text-silver-chalice d-flex justify-content-between mb-2">Новий пароль</p>
+                            <input type="password" name="password" class="input w-100 px-3" required="">
+                            <div class="icon-eye"></div>
+                        </div>
+                        <button class="btn btn-success w-100 py-2">Зберегти</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="contact-us" role="tabpanel" aria-labelledby="contact-us">
+                    <form class="personal-cabinet-form form-contact-us">
+                        <h4 class="title-form text-center text-mine-shaft mb-3">Напишіть нам</h4>
+                        <p class="contact_us-text-info text-center text-mine-shaft mb-4 pb-2">Якщо у вас є питання, пропозиція або коментар, напишіть нам листа</p>
+                        <div class="input-group d-flex flex-column mb-3 w-100">
+                            <p class="text-silver-chalice mb-2">Ім’я</p>
+                            <input class="px-3" type="email" name="email" required>
+                        </div>
+                        <div class="input-group d-flex flex-column mb-3 w-100">
+                            <p class="text-silver-chalice mb-2">Email</p>
+                            <input class="px-3" type="email" name="email" required>
+                        </div>
+                        <div class="input-group d-flex flex-column mb-4 w-100">
+                            <p class="text-silver-chalice mb-2">Ваше питання/коментарій</p>
+                            <textarea class="px-3" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn btn-success w-100 py-2">Відправити</button>
+                        <a class="text-dove-gray text-center d-block mt-4" href="">Дивитись список контактів</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-alabaster pt-5 pb-3">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-2">
+                <a href="home.html" class="icon-logo mb-5"></a>
+                <p class="social-label text-silver-chalice">Соціальні мережі</p>
+                <div class="d-flex">
+                    <a href="" class="icon-fs mr-3"></a>
+                    <a href="" class="icon-inst"></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                    <a href="" class="text-mine-shaft link-footer mb-2">Контакти</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Оплата і доставка</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Повернення і обмін</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Кар’єра</a>
+                    <a href="" class="text-mine-shaft link-footer">Блог</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <a href="" class="text-mine-shaft link-footer mb-2">Працюйте з нами</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Про нас</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Соціальна відповідальність</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Статті</a>
+                    <a href="" class="text-mine-shaft link-footer">Питання та відповіді</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="block-contact_us ml-auto">
+                    <h5 class="contact_us-title text-mine-shaft">Дізнавайтесь першим</h5>
+                    <p class="contact_us-text-info text-gray pr-3 mb-4">Підписуйтесь на розсилку і отримуйте актуальні
+                        пропозиції на почту</p>
+                    <form action="">
+                        <input type="email" placeholder="Email" class="input pl-3">
+                        <button type="submit" class="btn btn-success py-2">Підписатись</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="icon-card"></div>
+            </div>
+            <div class="col-12 text-center mt-2">
+                <span class="text-silver-chalice text-copyright">Copyright © 2019 Orto-Med. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modal login-->
+<div class="modal fade custom-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Увійти в особистий кабінет</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal"
+                                  data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 mb-4" required>
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Увійти</button>
+                </form>
+                <p class="text-mine-shaft mx-auto main-text">Увійти за допомогою</p>
+                <div class="block-login-service mt-3 mb-4">
+                    <img src="static/img/img-service.png" width="328" alt="">
+                </div>
+                <button type="button" data-toggle="modal" data-target="#registrationModal"
+                        data-dismiss="modal" class="btn btn-outline-success py-2 w-100">Зареєструватися
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal registration-->
+<div class="modal fade custom-modal" id="registrationModal" tabindex="-1" role="dialog"
+     aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Реєстрація</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal"
+                                  data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 mb-4" required>
+                        <div class="icon-eye"></div>
+                    </div>
+                    <p>Телефон</p>
+                    <input type="text" id="phone">
+                    <button type="submit" class="btn btn-success py-2 w-100">Зареєструватися</button>
+                </form>
+                <p class="text-mine-shaft main-text w-100 mb-0">
+                    <span class="text-dove-gray d-block mb-1">Натискаючи на цю кнопку, ви погоджуєтеся з умовами</span>
+                    Користувальницької угоди</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal forgotPassword-->
+<div class="modal fade custom-modal" id="forgotPasswordModal" tabindex="-1" role="dialog"
+     aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-2">Забули пароль?</h5>
+                <p class="info-text text-mine-shaft">Напишіть свій Email і ми надішлемо вам листа для відновлення
+                    пароля</p>
+                <form action="" class="w-100 mt-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <button type="submit" class="btn btn-success py-2 w-100">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/navbar.js"></script>
+<script src="static/js/show-subcategories.js"></script>
+<script src="static/js/input.js"></script>
+<script src="static/js/select.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#user-phone").mask("+38 ?(999) 999 9999");
+
+        $('input[name="name-city"]').on('keydown', function (e) {
+            let form = $('.form-address.city');
+            if (e.which == 13) {
+                e.preventDefault();
+                form.find('.btn-success').removeClass('d-none');
+                form.find('.block-delivery-select').removeClass('d-none');
+                form.find('.block-delivery-courier').removeClass('d-none');
+            }
+        });
+
+        $('#state0').on('click', function () {
+            $('#stateForm0').addClass('d-none');
+            $('#stateForm1').removeClass('d-none');
+        });
+
+        $('#state1').on('click', function () {
+            $('#stateForm1').addClass('d-none');
+            $('#stateForm2').removeClass('d-none');
+        })
+
+        $('.form-purchase-history .btn-success').on('click', function () {
+            $('.form-purchase-history').addClass('d-none');
+            $('.form-purchase-history.catalog').removeClass('d-none');
+        })
+    });
+</script>
+</body>
+</html>

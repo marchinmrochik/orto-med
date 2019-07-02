@@ -1,0 +1,148 @@
+.form-contact-data, .form-address.city, .form-change-password, .form-contact-us{
+    max-width: 400px;
+    min-width: 50%;
+}
+
+.form-contact-data input[name='user-first-name'], .form-address.city input[name='user-house']{
+    border-right: 1px solid var(--mercury);
+}
+
+
+.form-contact-data p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.form-address .loaded-address-card {
+    max-width: 461px;
+    min-width: calc(50% + 60px);
+    min-height: 108px;
+}
+
+.form-address .loaded-address-card .icon-delete:hover, .form-address .loaded-address-card .icon-delete:focus,
+.form-address .loaded-address-card .icon-edit:hover, .form-address .loaded-address-card .icon-edit:focus{
+background: var(--mine-shaft);
+}
+
+.form-address .loaded-address-card .title-address {
+    color: var(--silver);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.form-address .loaded-address-card .address-card {
+    font-weight: 500;
+}
+
+.form-address .loaded-address-card .icon-delete {
+    margin-top: 3px;
+    margin-bottom: 9px;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .block-order {
+    border: 1px solid var(--alabaster);
+}
+
+.form-purchase-history.catalog .block-catalog-orders .block-order .order-img {
+    width: 165px;
+    height: 165px;
+    object-fit: contain;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .header-block {
+    background: var(--dove-gray);
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .header-block .date-orders {
+    flex: 0.25;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .header-block .number-orders {
+    flex: 0.5;
+    text-align: center;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .header-block .total-sum-orders {
+    flex: 0.35;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .block-order .info-product {
+    width: calc(100% - 165px);
+}
+
+.form-purchase-history.catalog .block-catalog-orders .block-order .title-order {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.form-purchase-history.catalog .block-catalog-orders .block-order p {
+    line-height: 26px;
+    width: max-content;
+    width: -moz-max-content;
+}
+
+.form-change-password .label-input {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.form-change-password .label-input span{
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.form-change-password .icon-eye {
+    position: absolute;
+    top: 48px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.form-contact-us .title-form {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 31px;
+}
+
+.form-contact-us .contact_us-text-info {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    word-wrap: break-word;
+    max-width: calc(100% - 100px);
+    margin: auto;
+}
+
+.form-contact-us a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-contact-us a:hover, .form-contact-us a:focus {
+    color: var(--mine-shaft);
+    outline: none;
+}
