@@ -22,9 +22,8 @@
 }
 
 .intro-img {
-    background: url("../img/intro-bg.png") no-repeat center;
     max-width: 752px;
     height: 491px;
-    background-size: cover;
+    object-fit: contain;
 }
 
