@@ -106,6 +106,29 @@ h1 {
     width: 409px;
 }
 
+.input-group.success, .input-group.error {
+    position: relative;
+}
+
+.input-group.success:after, .input-group.error:after {
+    content: '';
+    width: 3px;
+    display: block;
+    height: 42px;
+    border-radius: 3px 0px 0px 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.input-group.success:after {
+    background: var(--sushi);
+}
+
+.input-group.error:after {
+    background: var(--guardsman-red);
+}
+
 .input-group input, .input-group input:focus,  .input-group textarea,  .input-group textarea:focus {
     border: none;
     background: var(--alabaster);
