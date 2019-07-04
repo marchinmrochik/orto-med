@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="static/css/slick.css">
+    <link rel="stylesheet" href="static/css/slick-theme.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-en_US.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3 header-top bg-alabaster">
+        <div class="row d-flex justify-content-between">
+            <nav class="d-flex align-items-center">
+                <a class="nav-link text-dove-gray pr-5" href="#">Доставка та оплата</a>
+                <a class="nav-link text-dove-gray px-2" href="#">Повернення та обмін</a>
+                <a class="nav-link text-dove-gray pl-5" href="#">Наші магазини</a>
+            </nav>
+            <div class="d-flex align-items-center">
+                <div class="mr-5 select-phone">
+                    <select class="selectpicker" id="select-phone">
+                        <option value="tel:+380674604626"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>067 460 46 26</a>">
+                        </option>
+                        <option value="tel:+380954440357"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>095 444 03 57</a>">
+                        </option>
+                        <option value="tel:+380935057921"
+                                data-content="<span class='d-none'>Телефон:</span>
+                       <a href='' class='text-mine-shaft number-phone'>093 505 79 21</a>">
+                        </option>
+                    </select>
+
+                </div>
+                <nav class="d-flex">
+                    <a class="nav-link text-dove-gray active pl-0 pr-2" href="#">Укр</a>
+                    <a class="nav-link text-dove-gray pl-3" href="#">Рус</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header-bottom px-5 px-xl-5 px-lg-3 bg-white">
+        <div class="row justify-content-between">
+            <div class="col-lg-8 d-flex align-items-center">
+                <a href="home.html" class="icon-logo"></a>
+                <div class="nav pl-5 pl-lg-4" id="nav-tab" role="tablist">
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" href="catalog-categories.html#collapseOne">Реабілітація</a>
+                        <div class="tab-content">
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Інвалідні візки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Підйомники та пандуси</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Ходунки та роллери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Палиці</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Милиці</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та аксесуари</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та подушки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та крісла-каталки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і туалету</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" href="catalog-categories.html#collapseTwo">Ортопедія</a>
+                        <div class="tab-content">
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні ліжка та аксесуари</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протипролежневі матраци та подушки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Туалетні стільці та крісла-каталки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Обладнання для ванни і туалету</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Протези та аксесуари</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Товари для гігієни</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Тренажери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Скутери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичні меблі</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" href="catalog-categories.html#collapseThree">Медтехніка</a>
+                        <div class="tab-content" >
+                            <div class="tab-pane d-flex" >
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Вітафон</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Термометри і гігромертри</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Аспіратори</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Кисневі концентратори</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Негатоскопи</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Кварцові лампи</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Алкотестери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Інгалятори (небулайзери)</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Глюкометри</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-item-menu position-relative">
+                        <a class="nav-item nav-link text-mine-shaft pr-xl-4 pr-lg-0" href="catalog-categories.html#collapseFour">Ваше здоров’я</a>
+                        <div class="tab-content" >
+                            <div class="tab-pane d-flex">
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Компресійний та антиемболічний трикотаж</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Для діагностики і ліування</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Медичний одяг</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Ваги</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Акушерство, педіатрія, гінекологія</a>
+                                </div>
+                                <div class="d-flex flex-column mr-5 pr-4">
+                                    <a href="" class="subcategories-link text-emperor mb-2">Аплікатори Ляпко</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Масажери</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Гідромасажні ванночки</a>
+                                    <a href="" class="subcategories-link text-emperor mb-2">Іонізатори, зволожувачі, очищувачі повітря</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-item nav-link text-mine-shaft pr-4 pr-lg-0" href="">Блог</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                <div class="block-search">
+                    <input type="search" class="search py-3" placeholder="Search">
+                </div>
+                <div class="d-flex align-items-center ml-5 ml-lg-4">
+                    <div class="icon-user mr-3 mr-lg-2" data-toggle="modal" data-target="#loginModal"></div>
+                    <div class="icon-cart ml-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-navigate">
+    <div class="container-fluid px-5">
+    </div>
+</section>
+
+<div class="container-fluid px-5 px-xl-5 px-lg-3 mb-5 pb-5">
+    <div class="row">
+        <div class="col-12">
+            <h5 class="section-title text-mine-shaft mb-3 mt-4 text-center">Дякуємо за замовлення</h5>
+            <p class="text-dove-gray mb-4 text-center">Номер замовлення: <span class="text-mine-shaft">67384522</span></p>
+            <p class="text-black py-3 mb-4 text-center info-text">Найближчим часом з вами зв’яжеться наш менеджер для підтвердження</p>
+            <div class="d-flex justify-content-center">
+                <a href="home.html" class="btn btn-success">На головну</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="section-categories">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
+        <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center">
+                <div class="icon-leaf"></div>
+                <h4 class="section-title">Категорії</h4>
+            </div>
+            <div class="col-12 d-flex mt-5 justify-content-between">
+                <div class="block-category d-flex flex-column position-relative">
+                    <img class="mx-auto" src="static/img/categories-img1.png" style="max-width: 100%;object-fit: contain" alt="">
+                    <div class="text-center">
+                        <h5 class="category-title mt-5">Реабілітація</h5>
+                        <div class="line-green my-3 mx-auto"></div>
+                        <p class="text-dove-gray category-text text-center mb-0 mt-4 mx-auto">
+                            Головним завданням реабілітації є повноцінне відновлення функціональних можливостей різних
+                            систем організму і опорно-рухового апарату, а також розвиток компенсаторних
+                            пристосувань до умов повсякденного життя і праці.
+                        </p>
+                        <a href="categories.html" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</a>
+                    </div>
+                    <div class="bg-alabaster position-absolute categories-bg"></div>
+                </div>
+                <div class="block-category d-flex flex-column position-relative">
+                    <img class="mx-auto" src="static/img/categories-img3.png" style="max-width: 100%;object-fit: contain" alt="">
+                    <div class="text-center">
+                        <h5 class="category-title mt-5">Ортопедія</h5>
+                        <div class="line-green my-3 mx-auto"></div>
+                        <p class="text-dove-gray category-text text-center mb-0 mt-4 mx-auto">
+                            Ортопедія - одна з медичних спеціальностей, яка нерозривно пов'язана з травматологією.
+                            Ця дисципліна вивчає функції, структуру, захворювання, методи лікування та профілактики
+                            опорно-рухового апарату людини.
+                        </p>
+                        <a href="categories.html" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</a>
+                    </div>
+                    <div class="bg-alabaster position-absolute categories-bg"></div>
+                </div>
+            </div>
+            <div class="col-12 d-flex mt-5 justify-content-between">
+                <div class="block-category d-flex flex-column position-relative">
+                    <img class="mx-auto" src="static/img/categories-img2.png" style="max-width: 100%;object-fit: contain" alt="">
+                    <div class="text-center">
+                        <h5 class="category-title mt-5">Медтехніка</h5>
+                        <div class="line-green my-3 mx-auto"></div>
+                        <p class="text-dove-gray category-text text-center mb-0 mt-4 mx-auto">
+                            Це електрична, ручна апаратура, що застосовується в медичній практиці. Вона буває професійна,
+                            яка використовується в клінічних, лікарняних умовах, а також домашня ,
+                            якою може користуватися будь-яка людина.
+                        </p>
+                        <a href="categories.html" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</a>
+                    </div>
+                    <div class="bg-alabaster position-absolute categories-bg"></div>
+                </div>
+                <div class="block-category d-flex flex-column position-relative">
+                    <img class="mx-auto" src="static/img/categories-img4.png" style="max-width: 100%;object-fit: contain" alt="">
+                    <div class="text-center">
+                        <h5 class="category-title mt-5">Ваше здоров’я</h5>
+                        <div class="line-green my-3 mx-auto"></div>
+                        <p class="text-dove-gray category-text text-center mb-0 mt-4 mx-auto">
+                            Кожна людина повинна дбати про своє здоров’я в першу чергу сама. Краще запобігти захворюванню,
+                            ніж лікуватися. Першим важливим елементом піклування про здоров’я є відсліджування власного самопочуття.
+                        </p>
+                        <a href="categories.html" class="btn btn-outline-success py-2 text-center mt-5 mx-auto">Дивитись</a>
+                    </div>
+                    <div class="bg-alabaster position-absolute categories-bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-slider mb-5 pb-5">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center">
+                    <div class="icon-leaf mr-2"></div>
+                    <span class="slider-title text-silver-chalice">Рекомендації</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-end mb-4 pb-3">
+                    <p class="slider-subtext mb-0 text-mine-shaft">Ви вже переглядали</p>
+                    <div class="d-flex slider-navigation">
+                        <div class="custom-arrow d-flex justify-content-center align-items-center left" aria-disabled="true">
+                            <div class="icon-arrow left"></div>
+                        </div>
+                        <div class="custom-arrow d-flex justify-content-center align-items-center right ml-4">
+                            <div class="icon-arrow right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="slider" id="slider1">
+                    <div class="product-preview sale">
+                        <div>
+                            <img src='static/img/productExample2.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн <span class="sale text-silver-chalice ml-3">9580 грн</span></p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample2.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview">
+                        <div>
+                            <img src='static/img/productExample1.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн</p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample1Hover.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview sale">
+                        <div>
+                            <img src='static/img/productExample2.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн <span class="sale text-silver-chalice ml-3">9580 грн</span></p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample2.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview">
+                        <div>
+                            <img src='static/img/productExample1.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн</p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample1Hover.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview sale">
+                        <div>
+                            <img src='static/img/productExample2.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн <span class="sale text-silver-chalice ml-3">9580 грн</span></p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample2.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview">
+                        <div>
+                            <img src='static/img/productExample1.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн</p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample1Hover.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview sale">
+                        <div>
+                            <img src='static/img/productExample2.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн <span class="sale text-silver-chalice ml-3">9580 грн</span></p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample2.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-preview">
+                        <div>
+                            <img src='static/img/productExample1.png' alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-price text-black mb-2">5580 грн</p>
+                                <p class="product-title text-black">Багатофункціональний візок з високою спинкою OSD-MOD-1-45</p>
+                            </div>
+                        </div>
+                        <a class="hover-block" href="">
+                            <img src="static/img/productExample1Hover.png" alt="">
+                            <div class="product-info bg-alabaster">
+                                <p class="product-description text-black">Візок багатофункціональний з легкою алюмінієвою рамою,
+                                    оснащений відкидною спинкою, що забезпечує комфортне перебування хворого у візку,
+                                    в залежності від його стану. Верхня ...</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-alabaster pt-5 pb-3">
+    <div class="container-fluid px-5 px-xl-5 px-lg-3">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-2">
+                <a href="home.html" class="icon-logo mb-5"></a>
+                <p class="social-label text-silver-chalice">Соціальні мережі</p>
+                <div class="d-flex">
+                    <a href="" class="icon-fs mr-3"></a>
+                    <a href="" class="icon-inst"></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                    <a href="" class="text-mine-shaft link-footer mb-2">Контакти</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Оплата і доставка</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Повернення і обмін</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Кар’єра</a>
+                    <a href="" class="text-mine-shaft link-footer">Блог</a>
+                </div>
+                <div class="d-flex flex-column">
+                    <a href="" class="text-mine-shaft link-footer mb-2">Працюйте з нами</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Про нас</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Соціальна відповідальність</a>
+                    <a href="" class="text-mine-shaft link-footer mb-2">Статті</a>
+                    <a href="" class="text-mine-shaft link-footer">Питання та відповіді</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="block-contact_us ml-auto">
+                    <h5 class="contact_us-title text-mine-shaft">Дізнавайтесь першим</h5>
+                    <p class="contact_us-text-info text-gray pr-3 mb-4">Підписуйтесь на розсилку і отримуйте актуальні пропозиції на почту</p>
+                    <form action="">
+                        <input type="email" placeholder="Email" class="input pl-3">
+                        <button type="submit" class="btn btn-success py-2">Підписатись</button>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <div class="icon-card"></div>
+            </div>
+            <div class="col-12 text-center mt-2">
+                <span class="text-silver-chalice text-copyright">Copyright © 2019 Orto-Med. All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modal login-->
+<div class="modal custom-modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Увійти в особистий кабінет</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 mb-4" required>
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Увійти</button>
+                </form>
+                <p class="text-mine-shaft mx-auto main-text">Увійти за допомогою</p>
+                <div class="block-login-service mt-3 mb-4">
+                    <img src="static/img/img-service.png" width="328"  alt="">
+                </div>
+                <button type="button" data-toggle="modal" data-target="#registrationModal"
+                        data-dismiss="modal" class="btn btn-outline-success py-2 w-100">Зареєструватися</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal registration-->
+<div class="modal custom-modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-4">Реєстрація</h5>
+                <form action="" class="w-100 mt-1 mb-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <div class="position-relative">
+                        <p class="label-input text-silver-chalice d-flex justify-content-between mb-1">
+                            Пароль
+                            <span class="text-mine-shaft" data-toggle="modal" data-target="#forgotPasswordModal" data-dismiss="modal">Забули пароль?</span></p>
+                        <input type="password" name="password" class="input w-100 px-3 mb-4" required >
+                        <div class="icon-eye"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success py-2 w-100">Зареєструватися</button>
+                </form>
+                <p class="text-mine-shaft main-text w-100 mb-0">
+                    <span class="text-dove-gray d-block mb-1">Натискаючи на цю кнопку, ви погоджуєтеся з умовами</span>
+                    Користувальницької угоди</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modal forgotPassword-->
+<div class="modal custom-modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <h5 class="title-modal text-mine-shaft mb-2">Забули пароль?</h5>
+                <p class="info-text text-mine-shaft">Напишіть свій Email і ми надішлемо вам листа для відновлення пароля</p>
+                <form action="" class="w-100 mt-4">
+                    <p class="label-input text-silver-chalice mb-1">Email</p>
+                    <input type="email" class="input w-100 px-3 mb-4" required>
+                    <button type="submit" class="btn btn-success py-2 w-100">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="static/js/navbar.js"></script>
+<script src="static/js/input.js"></script>
+<script src="static/js/select.js"></script>
+<script src="static/js/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#slider1').slick({
+            infinite: false,
+            variableWidth: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrow: false
+        });
+
+
+        $(document).on('click', '.custom-arrow.left', function () {
+            let _this = $(this);
+            let arrowLeft = _this.parents('.section-slider').find(".slick-prev.slick-arrow");
+
+            if(arrowLeft.hasClass('slick-disabled') ) {
+                _this.attr('aria-disabled', true).next().attr('aria-disabled', false);
+            } else {
+                _this.attr('aria-disabled', false).next().attr('aria-disabled', false);
+                arrowLeft.trigger( "click" );
+            }
+        });
+
+        $(document).on('click', '.custom-arrow.right', function () {
+            let _this = $(this);
+            let arrowRight = _this.parents('.section-slider').find(".slick-next.slick-arrow");
+
+            if(arrowRight.hasClass('slick-disabled') ) {
+                _this.attr('aria-disabled', true).prev().attr('aria-disabled', false);
+            } else {
+                _this.attr('aria-disabled', false).prev().attr('aria-disabled', false);
+                arrowRight.trigger( "click" )
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

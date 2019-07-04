@@ -157,6 +157,13 @@ button:focus , input:focus {
     text-align: center;
 }
 
+.info-text {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
 @media (max-width: 1023px) {
     .input-group {
         width: 100%;
