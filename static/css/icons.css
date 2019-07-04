@@ -146,3 +146,10 @@
     background-size: contain;
     cursor: pointer;
 }
+
+.icon-quote {
+    background: url("../img/icons/icon-quote.svg") no-repeat center;
+    width: 58px;
+    height: 58px;
+    background-size: contain;
+}

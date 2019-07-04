@@ -18,6 +18,10 @@
     color: var(--sushi);
 }
 
+.text-abbey {
+    color: var(--abbey);
+}
+
 .text-shark {
     color: var(--shark)
 }
@@ -171,6 +175,34 @@ button:focus , input:focus {
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
+}
+
+.line-grey {
+    width: 1px;
+    height: 100%;
+    background: var(--gallery);
+}
+
+.block-info {
+    max-width: 650px;
+    padding: 47px 41px 47px 24px;
+}
+
+.block-info p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    word-break: break-word;
+    max-width: calc(100% - 110px);
+}
+
+.part-specifics ul li span {
+    font-weight: 600;
+}
+
+.news .part-specifics ul li {
+     font-size: 16px;
 }
 
 @media (max-width: 1023px) {
