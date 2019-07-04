@@ -65,3 +65,14 @@
 .section-news-article .block-text .main-text {
     max-width: 575px;
 }
+
+.container-article-data {
+    max-width: 650px;
+}
+
+.container-article-data p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--abbey);
+}
