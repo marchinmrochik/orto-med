@@ -47,6 +47,11 @@
     color: var(--mine-shaft);
 }
 
+.cart .select-delivery .dropdown-toggle,.cart  .select-delivery .dropdown-item:focus,.cart  .select-delivery .dropdown-item:hover,
+.cart .select-department .dropdown-toggle,.cart  .select-department .dropdown-item:focus,.cart  .select-department .dropdown-item:hover {
+    background: var(--white);
+}
+
 .select-phone .dropdown.show .dropdown-toggle::after, .select-modification .dropdown.show .dropdown-toggle::after,
 .select-quantity .dropdown.show .dropdown-toggle::after, .select-delivery .dropdown.show .dropdown-toggle::after,
 .select-department .dropdown.show .dropdown-toggle::after{

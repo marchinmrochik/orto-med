@@ -153,3 +153,10 @@
     height: 58px;
     background-size: contain;
 }
+
+.icon-arrow-long {
+    background: url("../img/icons/icon-arrow-long.svg") no-repeat center;
+    width: 14px;
+    height: 10px;
+    background-size: contain;
+}

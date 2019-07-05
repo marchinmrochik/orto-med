@@ -48,7 +48,7 @@ background: var(--mine-shaft);
     margin-bottom: 9px;
 }
 
-.form-purchase-history.catalog .block-catalog-orders .block-order {
+.form-purchase-history.catalog .block-catalog-orders .block-order, .catalog  .block-order{
     border: 1px solid var(--alabaster);
 }
 
@@ -83,7 +83,7 @@ background: var(--mine-shaft);
     width: calc(100% - 165px);
 }
 
-.form-purchase-history.catalog .block-catalog-orders .block-order .title-order {
+.form-purchase-history.catalog .block-catalog-orders .block-order .title-order, .catalog  .block-order .title-order  {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -94,7 +94,7 @@ background: var(--mine-shaft);
     overflow: hidden;
 }
 
-.form-purchase-history.catalog .block-catalog-orders .block-order p {
+.form-purchase-history.catalog .block-catalog-orders .block-order p, .catalog  .block-order p {
     line-height: 26px;
     width: max-content;
     width: -moz-max-content;

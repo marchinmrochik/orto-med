@@ -1,0 +1,81 @@
+.catalog  .block-order .order-img {
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+}
+
+.catalog  .block-order .info-product {
+    width: calc(100% - 210px);
+}
+
+.catalog .total-price {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.catalog .total-price span {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.link-back {
+    width: 36px;
+    height: 36px;
+    border: 3px;
+}
+
+.cart .title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.header-orders .number-orders {
+    font-size: 12px;
+}
+
+.cart .modal-content, .cart .form-data-user  {
+    border: none;
+    border-radius: initial;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cart .modal-content .container-modal-content, .cart .form-data-user  {
+   width: 400px;
+}
+
+
+
+.cart .modal-content .icon-eye {
+    position: absolute;
+    top: 43px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.cart .form-data-user .title-part {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--mine-shaft);
+}
+
+.cart .form-data-user .link-conditions {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.cart .form-data-user .link-conditions a:hover,
+.cart .form-data-user .link-conditions a:focus {
+    color: var(--mine-shaft);
+}
