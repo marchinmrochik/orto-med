@@ -3,6 +3,11 @@
     min-width: 50%;
 }
 
+.form-contact-us.page {
+    width: 400px;
+    min-width: initial;
+}
+
 .form-contact-data input[name='user-first-name'], .form-address.city input[name='user-house']{
     border-right: 1px solid var(--mercury);
 }

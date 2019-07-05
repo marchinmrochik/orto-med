@@ -1,0 +1,36 @@
+.section-contact-us-info .block-contact-us-info {
+    max-width: 290px;
+}
+
+.section-contact-us-info .block-contact-us-info p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-contact-us-info .block-contact-us-info p span, .section-contact-us-info .block-contact-us-info p a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: initial;
+}
+
+.section-contact-us-info .block-contact-us-info p a:hover,
+.section-contact-us-info .block-contact-us-info p a:focus {
+    color: var(--mine-shaft);
+}
+
+.map {
+    background: url("../img/map.png") no-repeat center;
+    max-width: 773px;
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    position: absolute;
+    bottom: -100px;
+    right: 145px;
+}
