@@ -2,14 +2,24 @@
     padding-bottom: 100px;
 }
 
-.section-subcategories .list-subcategories {
-    max-height: 310px;
-    overflow: hidden;
+.section-subcategories .list-subcategories a:nth-child(-n+10) {
+    display: block;
+    opacity: 1;
 }
 
-.section-subcategories.open_all .list-subcategories {
-    max-height: 455px;
-    transition: max-height 0.25s ease-in;
+.section-subcategories .list-subcategories a {
+    display: none;
+    opacity: 0;
+}
+
+.section-subcategories.open_all .list-subcategories a {
+    display: block;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 1;
 }
 
 .section-subcategories .subcategories-title {
