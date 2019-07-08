@@ -42,6 +42,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-size: 14px;
+    outline: none!important;
 }
 
 .custom-checkbox.price {
