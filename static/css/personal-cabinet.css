@@ -8,11 +8,6 @@
     min-width: initial;
 }
 
-.form-contact-data input[name='user-first-name'], .form-address.city input[name='user-house']{
-    border-right: 1px solid var(--mercury);
-}
-
-
 .form-contact-data p {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;

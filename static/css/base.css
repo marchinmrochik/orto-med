@@ -156,6 +156,11 @@ h1 {
     min-height: 215px;
 }
 
+.input-group.double-filed input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid var(--mercury);
+}
 
 button:focus , input:focus {
     outline: none!important;
