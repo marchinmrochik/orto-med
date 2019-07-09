@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 $('.panel-collapse').on('show.bs.collapse', function () {
+    $('.panel.panel-default').find('.active').removeClass('active').siblings('.show').removeClass('show');
     $(this).siblings('.panel-heading').addClass('active');
 });
 
