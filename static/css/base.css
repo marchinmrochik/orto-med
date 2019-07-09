@@ -206,10 +206,6 @@ button:focus , input:focus {
     font-weight: 600;
 }
 
-.news .part-specifics ul li {
-     font-size: 16px;
-}
-
 @media (max-width: 1023px) {
     .input-group {
         width: 100%;

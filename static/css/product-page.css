@@ -88,7 +88,8 @@
 
 .part-specifics ul li {
     position: relative;
-    padding-left: 22px;word-break: break-word;
+    padding-left: 22px;
+    word-break: break-word;
 }
 
 .part-specifics ul li:before{

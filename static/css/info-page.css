@@ -1,0 +1,114 @@
+@import "fonts.css";
+@import "colors.css";
+
+.info-page span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--oslo-gray);
+    margin-bottom: 16px;
+}
+
+.info-page h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color: var(--shark);
+}
+
+.info-page img, .info-page video {
+    max-width: 800px;
+    object-fit: contain;
+    height: 535px;
+    margin-bottom: 32px;
+}
+
+.info-page p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--abbey);
+    margin-bottom: 16px;
+    max-width: 650px;
+}
+
+.info-page ul, .info-page ol {
+    margin-bottom: 24px;
+    max-width: 725px;
+    list-style: none;
+}
+
+.info-page ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
+.info-page ol li::before {
+    content: "0" counter(my-awesome-counter);
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--silver);
+}
+
+.info-page ul li,.info-page ol li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--abbey);
+    position: relative;
+    padding-left: 22px;
+    word-break: break-word;
+    margin-bottom: 16px;
+}
+
+.info-page ol li {
+    counter-increment: my-awesome-counter;
+    position: relative;
+    padding-left: 35px;
+}
+
+.info-page ul li strong, .info-page ol li strong  {
+    font-weight: 600;
+}
+
+.info-page ul li:before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--alto);
+    left: 0;
+    top: 7.5px;
+}
+
+.info-page h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--abbey);
+    width: calc(100% - 110px);
+}
+
+.info-page h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--shark);
+}
+
+.info-page .line-grey {
+    height: initial;
+}
