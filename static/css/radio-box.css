@@ -1,0 +1,46 @@
+.title-group-check {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.custom-radio .custom-control-label, .custom-control-input {
+    cursor: pointer;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-input:not(:disabled):checked~.custom-control-label::before {
+    background-color: var(--white);
+}
+
+.custom-control-label:before {
+    background-color: var(--white);
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: var(--mine-shaft);
+    border-radius: 20px;
+    border: none;
+    width: 6px;
+    height: 6px;
+    background-image: none;
+    left: -19px;
+    top: 9px;
+}
+
+.custom-control-label {
+    color: var(--shark);
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    outline: none!important;
+}

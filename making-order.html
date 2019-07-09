@@ -207,6 +207,10 @@
                             <span class="checkmark">Рахунок-фактурою</span>
                         </label>
                     </div>
+                    <div class="input-group company-field flex-column mb-3 w-100 d-none">
+                        <p class="text-silver-chalice mb-2">Назва компанії</p>
+                        <input class="px-3 bg-white" type="text" name="name-company" value="Орто-мед">
+                    </div>
                     <button class="btn btn-success mb-3 w-100 mt-4 pt-2" type="button">Замовити</button>
                     <p class="text-dove-gray link-conditions">Натискаючи на цю кнопку, ви погоджуєтеся з умовами <br>
                         <a href="" class="text-mine-shaft">Користувальницької угоди</a>
@@ -372,12 +376,16 @@
         $('#state1').on('click', function () {
             $('#stateForm1').addClass('d-none');
             $('#stateForm2').removeClass('d-none');
-        })
+        });
 
         $('.form-purchase-history .btn-success').on('click', function () {
             $('.form-purchase-history').addClass('d-none');
             $('.form-purchase-history.catalog').removeClass('d-none');
-        })
+        });
+
+        $('#payment3').on('click', function () {$('.company-field').removeClass('d-none').addClass('d-flex');});
+
+        $('#payment1, #payment2').on('click', function () {$('.company-field').addClass('d-none').removeClass('d-flex');});
     });
 </script>
 </body>
