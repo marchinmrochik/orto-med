@@ -6,12 +6,14 @@
     height: 100%;
 }
 
-.block-preview-product .list-img a{
+.block-preview-product .list-img .point-img {
     width: 91px;
     height: 91px;
+    object-fit: contain;
+    cursor: pointer;
 }
 
-.block-preview-product .list-img a:focus, .block-preview-product .list-img a:hover {
+.block-preview-product .list-img .point-img.active {
     border: 1px solid var(--sushi);
 }
 
@@ -19,7 +21,11 @@
 .block-preview-product .main-img {
     max-width: 100%;
     height: auto;
+    display: block;
+    cursor: pointer;
+    object-fit: contain;
 }
+
 
 .product-all-info .product-title {
     font-family: "Open Sans", sans-serif;

@@ -183,27 +183,26 @@
 <div class="container-fluid px-5 px-xl-5 px-lg-3 mb-5 pb-5">
     <div class="row">
         <div class="col-6 position-relative test">
-            <div class="block-preview-product d-flex pl-5" id="preview-product">
+            <div class="block-preview-product d-flex pl-5 position-fixed" id="preview-product">
                 <div class="d-flex flex-column list-img">
-                    <a href="static/img/productExample1.png" data-toggle="lightbox" data-gallery="gallery" data-type="image">
-                        <img src="static/img/productExample1.png" class="img-fluid" >
-                    </a>
-                    <a href="static/img/productExample1Hover.png" data-toggle="lightbox" data-gallery="gallery" data-type="image">
-                        <img src="static/img/productExample1Hover.png" class="img-fluid" >
-                    </a>
-                    <a href="static/img/lightboxExample1.png" data-toggle="lightbox" data-gallery="gallery" data-type="image">
-                        <img src="static/img/lightboxExample1.png" class="img-fluid" >
-                    </a>
-                    <a href="static/img/lightboxExample2.png" data-toggle="lightbox" data-gallery="gallery" data-type="image">
-                        <img src="static/img/lightboxExample2.png" class="img-fluid" >
-                    </a>
-                    <a href="static/img/lightboxExample3.png" data-toggle="lightbox" data-gallery="gallery" data-type="image">
-                        <img src="static/img/lightboxExample3.png" class="img-fluid" >
-                    </a>
+                    <img src="static/img/productExample1.png" class="point-img active" >
+                    <img src="static/img/productExample1Hover.png" class="point-img" >
+                    <img src="static/img/lightboxExample1.png" class="point-img" >
+                    <img src="static/img/lightboxExample2.png" class="point-img" >
+                    <img src="static/img/lightboxExample3.png" class="point-img" >
                 </div>
-                <a href="static/img/productExample1.png" data-toggle="lightbox" data-gallery="gallery" class="main-img" data-type="image">
-                    <img src="static/img/productExample1.png" class="img-fluid" >
-                </a>
+                <img src="static/img/productExample1.png" class="main-img">
+
+                <a href="static/img/productExample1.png" data-toggle="lightbox" data-gallery="gallery"
+                   class="lightbox-img active-img" data-type="image"></a>
+                <a href="static/img/productExample1Hover.png" data-toggle="lightbox" data-gallery="gallery"
+                   class="lightbox-img" data-type="image"></a>
+                <a href="static/img/lightboxExample1.png" data-toggle="lightbox" data-gallery="gallery"
+                   class="lightbox-img" data-type="image"></a>
+                <a href="static/img/lightboxExample2.png" data-toggle="lightbox" data-gallery="gallery"
+                   class="lightbox-img" data-type="image"></a>
+                <a href="static/img/lightboxExample3.png" data-toggle="lightbox" data-gallery="gallery"
+                   class="lightbox-img" data-type="image"></a>
             </div>
         </div>
         <div class="col-6">
@@ -968,11 +967,26 @@
             }
         });
 
+        $(document).on('click', '.main-img', function () {
+            $('.lightbox-img.active-img').ekkoLightbox();
+        });
+
+        $(document).on('click', '.point-img', function () {
+            let thisImg = $(this);
+            let linkImg = $('.lightbox-img');
+            $('.main-img').attr('src', thisImg.attr('src'));
+            thisImg.addClass('active').siblings('.point-img.active').removeClass('active');
+
+            for (var num = 0; num < linkImg.length; num++) {
+                if($(linkImg[num]).attr('href') ==  thisImg.attr('src') ) {
+                    $(linkImg[num]).addClass('active-img').siblings('.lightbox-img.active-img').removeClass('active-img');
+                }
+            }
+        });
+
         function positionBlock() {
             let top = $(document).scrollTop();
             if (top > topPos) {
-                $('#preview-product').addClass('position-fixed');
-
                 if( top >= $('.test').outerHeight() - 466) {
                     $('#preview-product').removeClass('position-fixed').addClass('position-absolute').css('bottom' , 0);
                 } else {
