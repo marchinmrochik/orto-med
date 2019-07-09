@@ -14,7 +14,6 @@
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
-    width: 50%;
 }
 
 .section-catalog-product-preview .block-sort a {
@@ -36,4 +35,14 @@
 }
 .section-catalog-product-preview .filters-close {
     cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .section-catalog-product-preview .block-sort {
+        flex: 0.52;
+    }
+
+    .section-catalog-product-preview .block-filter-check {
+        flex: 0.48;
+    }
 }

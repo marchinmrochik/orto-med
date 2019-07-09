@@ -245,7 +245,7 @@
                         <p class="text-silver-chalice mb-2">Ваше питання/коментарій</p>
                         <textarea class="px-3 bg-white" name="" id="" cols="30" rows="10"></textarea>
                     </div>
-                    <button class="btn btn-success w-100 py-2">Відправити</button>
+                    <button class="btn btn-success w-100 py-2" type="button" data-toggle="modal" data-target="#callBackModal">Відправити</button>
                 </form>
             </div>
         </div>
@@ -357,6 +357,21 @@
                 <p class="text-mine-shaft main-text w-100 mb-0">
                     <span class="text-dove-gray d-block mb-1">Натискаючи на цю кнопку, ви погоджуєтеся з умовами</span>
                     Користувальницької угоди</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal callBackModal-->
+<div class="modal custom-modal fade" id="callBackModal" tabindex="-1" role="dialog" aria-labelledby="callBackModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-alabaster">
+            <div class="container-modal-content d-flex flex-column align-items-center">
+                <p class="info-text text-mine-shaft">
+                    Дякуємо за Ваше питання/коментар. Ми відповімо <br> вам якнайшвидше
+                </p>
+                <button type="button" data-toggle="modal" data-dismiss="modal"
+                        class="btn btn-success py-2 w-100">Закрити</button>
             </div>
         </div>
     </div>
